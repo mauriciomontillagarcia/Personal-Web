@@ -22,10 +22,10 @@
 const TRANSLATIONS = {
   en: {
     // Navbar
-    'nav.projects': 'Projects',
+    'nav.about':    'Sobre mí',
+    'nav.projects': 'Data Projects',
     'nav.apps':     'Apps',
     'nav.blog':     'Blog',
-    'nav.contact':  'Contact',
 
     // Hero
     'hero.badge':       'Available for work',
@@ -93,10 +93,10 @@ const TRANSLATIONS = {
 
   es: {
     // Navbar
-    'nav.projects': 'Proyectos',
+    'nav.about':    'Sobre mí',
+    'nav.projects': 'Data Projects',
     'nav.apps':     'Apps',
     'nav.blog':     'Blog',
-    'nav.contact':  'Contacto',
 
     // Hero
     'hero.badge':       'Disponible para trabajar',
