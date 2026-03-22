@@ -28,8 +28,6 @@ const TRANSLATIONS = {
     'nav.blog':     'Blog',
 
     // Hero
-    'hero.badge':       'Available for work',
-    'hero.rolePrefix':  "I'm a ",
     'hero.tagline':     'Turning raw data into actionable insights and building tools that matter.',
     'hero.cta.portfolio': 'See my work',
     'hero.cta.contact':   'Get in touch',
@@ -49,12 +47,12 @@ const TRANSLATIONS = {
 
     // Portfolio section
     'portfolio.label':    'Work',
-    'portfolio.title':    'Data Projects',
+    'portfolio.title':    'Data projects',
     'portfolio.subtitle': 'A collection of data analytics and engineering work.',
 
     // Apps section
     'apps.label':    'Tools',
-    'apps.title':    'Apps & Tools',
+    'apps.title':    'Apps & tools',
     'apps.subtitle': "Software I've built to solve real problems.",
 
     // Blog section
@@ -88,7 +86,7 @@ const TRANSLATIONS = {
     'footer.madeBy': 'Made by',
 
     // Typed.js strings (roles)
-    'typed.roles': ['Analytics Engineer', 'Data Analyst', 'Developer', 'Problem Solver'],
+    'typed.roles': ['Analytics Engineer', 'Data Analyst', 'Developer'],
   },
 
   es: {
@@ -99,8 +97,6 @@ const TRANSLATIONS = {
     'nav.blog':     'Blog',
 
     // Hero
-    'hero.badge':       'Disponible para trabajar',
-    'hero.rolePrefix':  'Soy ',
     'hero.tagline':     'Transformando datos en decisiones e ideas en herramientas que importan.',
     'hero.cta.portfolio': 'Ver mi trabajo',
     'hero.cta.contact':   'Contactar',
@@ -125,7 +121,7 @@ const TRANSLATIONS = {
 
     // Apps section
     'apps.label':    'Herramientas',
-    'apps.title':    'Apps y Herramientas',
+    'apps.title':    'Apps y herramientas',
     'apps.subtitle': 'Software que desarrollé para resolver problemas reales.',
 
     // Blog section
@@ -159,7 +155,7 @@ const TRANSLATIONS = {
     'footer.madeBy': 'Creado por',
 
     // Typed.js strings (roles)
-    'typed.roles': ['Analytics Engineer', 'Data Analyst', 'Analista de Datos', 'Desarrollador'],
+    'typed.roles': ['Analytics Engineer', 'Data Analyst', 'Desarrollador'],
   },
 };
 
@@ -222,8 +218,8 @@ const PROJECTS = [
     id: 'churn-telecom',
     icon: '📡',
     title: {
-      en: 'Churn Prediction — Telecom',
-      es: 'Predicción de Churn — Telecom',
+      en: 'Churn prediction — Telecom',
+      es: 'Predicción de churn — Telecom',
     },
     description: {
       en: 'Analytical model to predict which customers are likely to leave a telecom operator, enabling the business to act proactively with targeted retention strategies.',
@@ -239,8 +235,8 @@ const PROJECTS = [
     id: 'loan-risk',
     icon: '🏦',
     title: {
-      en: 'Loan Repayment Risk Prediction',
-      es: 'Predicción de Riesgo de Préstamos',
+      en: 'Loan repayment risk prediction',
+      es: 'Predicción de riesgo de préstamos',
     },
     description: {
       en: 'Predictive model that assesses the likelihood of loan default to support credit risk decisions, built with customer-level features and machine learning classifiers.',
@@ -256,8 +252,8 @@ const PROJECTS = [
     id: 'transport-ml',
     icon: '🚀',
     title: {
-      en: 'ML Model Comparison — Transport',
-      es: 'Comparación de Modelos ML — Transporte',
+      en: 'ML model comparison — Transport',
+      es: 'Comparación de modelos ML — Transporte',
     },
     description: {
       en: 'Comparison of multiple ML models for predicting transportation methods, with a focus on sustainability and efficiency for smarter urban mobility decisions.',
@@ -273,8 +269,8 @@ const PROJECTS = [
     id: 'water-pump',
     icon: '💧',
     title: {
-      en: 'Water Pump Functionality Prediction',
-      es: 'Predicción de Funcionamiento de Bombas de Agua',
+      en: 'Water pump functionality prediction',
+      es: 'Predicción de funcionamiento de bombas de agua',
     },
     description: {
       en: 'Infrastructure ML model to accurately predict the operational status of water pumps, supporting resource optimization and proactive maintenance to reduce costs.',
@@ -290,8 +286,8 @@ const PROJECTS = [
     id: 'income-life',
     icon: '🌍',
     title: {
-      en: 'Income vs Life Expectancy Analysis',
-      es: 'Análisis Renta vs Esperanza de Vida',
+      en: 'Income vs life expectancy analysis',
+      es: 'Análisis renta vs esperanza de vida',
     },
     description: {
       en: 'Exploratory data analysis of the relationship between per capita income and life expectancy across countries, with visualizations that reveal global inequality patterns.',
@@ -313,7 +309,7 @@ function renderProjects() {
   grid.innerHTML = PROJECTS.map((project, index) => `
     <article class="card" data-aos="fade-up" data-aos-delay="${index * 80}">
       <div class="card__icon" aria-hidden="true">${project.icon}</div>
-      <h3 class="card__title">${project.title[currentLang]}</h3>
+      <h3 class="card__title">${project.links.github ? `<a href="${project.links.github}" target="_blank" rel="noopener noreferrer">${project.title[currentLang]}</a>` : project.title[currentLang]}</h3>
       <p class="card__description">${project.description[currentLang]}</p>
       <div class="card__tags">
         ${project.tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}
@@ -345,40 +341,6 @@ function renderProjects() {
    ============================================================ */
 
 const APPS = [
-  {
-    id: 'budget-tracker',
-    icon: '💰',
-    title: {
-      en: 'Budget Tracker',
-      es: 'Gestor de Presupuesto',
-    },
-    description: {
-      en: 'A clean, client-side web app for personal finance tracking. Categories, recurring expenses, monthly charts, and CSV export — no account required, all data stays in your browser.',
-      es: 'Una app web limpia y del lado del cliente para el seguimiento de finanzas personales. Categorías, gastos recurrentes, gráficos mensuales y exportación CSV — sin cuenta, todos los datos quedan en tu navegador.',
-    },
-    tags: ['HTML', 'CSS', 'JavaScript', 'Chart.js', 'LocalStorage'],
-    links: {
-      demo:   'https://example.com/demo/budget-tracker',
-      github: 'https://github.com/mauri/budget-tracker',
-    },
-  },
-  {
-    id: 'data-quality-checker',
-    icon: '🔍',
-    title: {
-      en: 'Data Quality Checker',
-      es: 'Verificador de Calidad de Datos',
-    },
-    description: {
-      en: 'CLI tool and Python library for automated data quality checks on CSV/Parquet files. Validates nulls, dtypes, ranges, and uniqueness, then generates an HTML report.',
-      es: 'Herramienta CLI y librería Python para validaciones automáticas de calidad en archivos CSV/Parquet. Valida nulos, tipos de datos, rangos y unicidad, y genera un reporte HTML.',
-    },
-    tags: ['Python', 'pandas', 'Click', 'pytest', 'Jinja2'],
-    links: {
-      demo:   null,
-      github: 'https://github.com/mauri/data-quality-checker',
-    },
-  },
   {
     id: 'city-size-comparison',
     icon: '🗺️',
@@ -470,61 +432,7 @@ const BLOG_POSTS = [
       en: 'From Stoicism to habit-building: the five books that genuinely changed the way I think — and why each one is worth your time.',
       es: 'Del estoicismo a la construcción de hábitos: los cinco libros que cambiaron de verdad mi forma de pensar y por qué cada uno merece tu tiempo.',
     },
-    url: '#',
-  },
-  {
-    id: 'sql-window-functions',
-    date: '2026-02-14',
-    readTime: 8,
-    category: {
-      en: 'SQL',
-      es: 'SQL',
-    },
-    title: {
-      en: 'Window Functions Every Data Analyst Should Know',
-      es: 'Funciones de Ventana que Todo Analista Debería Conocer',
-    },
-    excerpt: {
-      en: 'A practical guide to ROW_NUMBER, RANK, LAG, LEAD, and running totals — with real business use-cases and performance tips.',
-      es: 'Una guía práctica de ROW_NUMBER, RANK, LAG, LEAD y totales acumulados — con casos de uso reales y consejos de rendimiento.',
-    },
-    url: '#',
-  },
-  {
-    id: 'python-pandas-tricks',
-    date: '2026-01-28',
-    readTime: 6,
-    category: {
-      en: 'Python',
-      es: 'Python',
-    },
-    title: {
-      en: '10 pandas Tricks That Will Speed Up Your Data Cleaning',
-      es: '10 Trucos de pandas para Acelerar Tu Limpieza de Datos',
-    },
-    excerpt: {
-      en: 'Stop looping over DataFrames. From vectorized string operations to efficient groupby patterns, here are the techniques I use daily.',
-      es: 'Dejá de iterar DataFrames. Desde operaciones vectorizadas de strings hasta patrones eficientes de groupby, aquí están las técnicas que uso a diario.',
-    },
-    url: '#',
-  },
-  {
-    id: 'building-in-public',
-    date: '2026-01-10',
-    readTime: 4,
-    category: {
-      en: 'Career',
-      es: 'Carrera',
-    },
-    title: {
-      en: 'Why I Started Building in Public (and What I Learned)',
-      es: 'Por Qué Empecé a Construir en Público (y Qué Aprendí)',
-    },
-    excerpt: {
-      en: "Sharing your work before it's perfect is uncomfortable. But the feedback loop and accountability it creates are worth far more than the discomfort.",
-      es: 'Compartir tu trabajo antes de que esté perfecto es incómodo. Pero el ciclo de retroalimentación y la responsabilidad que genera valen mucho más que la incomodidad.',
-    },
-    url: '#',
+    url: 'blog-5-libros.html',
   },
 ];
 
