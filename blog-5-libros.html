@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mauricio Montilla — Data Projects: machine learning, analytics, and engineering work." />
+  <meta name="description" content="Mis 5 libros favoritos sobre desarrollo personal — Mauricio Montilla" />
   <meta name="author" content="Mauricio Montilla" />
-  <title>Projects — Mauricio Montilla</title>
+  <title>Mis 5 libros favoritos — Mauricio Montilla</title>
 
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,9 +14,6 @@
 
   <!-- FontAwesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- AOS — Animate On Scroll -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
   <!-- Site styles -->
   <link rel="stylesheet" href="style.css" />
@@ -38,9 +35,9 @@
       <!-- Desktop nav links -->
       <nav class="navbar__links" aria-label="Main navigation">
         <a href="index.html"    class="navbar__link" data-i18n="nav.about">Sobre mí</a>
-        <a href="projects.html" class="navbar__link navbar__link--active" data-i18n="nav.projects">Data Projects</a>
+        <a href="projects.html" class="navbar__link" data-i18n="nav.projects">Data Projects</a>
         <a href="apps.html"     class="navbar__link" data-i18n="nav.apps">Apps</a>
-        <a href="blog.html"     class="navbar__link" data-i18n="nav.blog">Blog</a>
+        <a href="blog.html"     class="navbar__link navbar__link--active" data-i18n="nav.blog">Blog</a>
       </nav>
 
       <!-- Right controls -->
@@ -73,27 +70,56 @@
 
 
   <!-- ============================================================
-       PAGE HEADER
+       BLOG POST CONTENT
   ============================================================ -->
-  <div class="page-header">
-    <div class="container">
-      <p class="section__label" data-i18n="portfolio.label">Work</p>
-      <h1 class="page-header__title" data-i18n="portfolio.title">Data Projects</h1>
-      <p class="page-header__subtitle" data-i18n="portfolio.subtitle">
-        A collection of data analytics and engineering work.
-      </p>
-    </div>
-  </div>
+  <main>
+    <article class="blog-post">
 
+      <!-- Back link -->
+      <a href="blog.html" class="blog-post__back">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        Volver al blog
+      </a>
 
-  <!-- ============================================================
-       PROJECTS GRID
-  ============================================================ -->
-  <main class="section" id="projects-main">
-    <div class="container">
-      <!-- Cards are rendered by JS -->
-      <div class="card-grid" id="projectsGrid"></div>
-    </div>
+      <!-- Meta -->
+      <div class="blog-post__meta">
+        <span class="blog-post__category">Libros</span>
+        <span>15 de enero de 2023</span>
+        <span>4 min de lectura</span>
+      </div>
+
+      <!-- Title -->
+      <h1 class="blog-post__title">Mis 5 libros favoritos sobre desarrollo personal</h1>
+
+      <!-- Body -->
+      <div class="blog-post__body">
+
+        <h2>1. "El sutil arte de que (casi) todo te importe una mierda" — Mark Manson</h2>
+        <p>Alejado de la visión ultrapositivista de muchos libros de desarrollo personal. Te hace replantearte lo que es verdaderamente importante en tu vida y dejar de creerte con derecho a todo cuando te afecte algo.</p>
+
+        <hr class="blog-post__divider" />
+
+        <h2>2. "Invicto" — Marcos Vázquez</h2>
+        <p>El mejor libro para iniciarse en el estoicismo y entenderlo bien. Un resumen fundamental de esta filosofía y de prácticas estoicas que nos ayudarán en nuestro día a día.</p>
+
+        <hr class="blog-post__divider" />
+
+        <h2>3. "Los 7 hábitos de la gente altamente efectiva" — Stephen R. Covey</h2>
+        <p>Para mí una guía fundamental de los hábitos que harán mejorar tu vida de forma muy considerable. Personalmente, me hizo cambiar mi visión sobre muchas cuestiones y hacer que me interesara por este tipo de libros.</p>
+
+        <hr class="blog-post__divider" />
+
+        <h2>4. "Las 12 palancas del éxito" — Stephen R. Covey</h2>
+        <p>Complementario con el anterior, este libro se enfoca más en pequeñas acciones con las que mejorar la calidad de tu vida desde el minuto uno, sin tanta necesidad de interiorizar hábitos.</p>
+
+        <hr class="blog-post__divider" />
+
+        <h2>5. "12 Reglas para vivir" — Jordan B. Peterson</h2>
+        <p>Una bofetada de realidad que te sacude desde los primeros capítulos. Quizás un poco más denso que los anteriores, pero hace que veamos el por qué de algunos comportamientos.</p>
+
+      </div><!-- /.blog-post__body -->
+
+    </article>
   </main>
 
 
@@ -120,7 +146,7 @@
   <!-- ============================================================
        SCRIPTS
   ============================================================ -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- AOS not needed on this page — no scroll animations -->
   <script src="script.js"></script>
 
 </body>

@@ -99,7 +99,7 @@
 
         <!-- Animated role -->
         <p class="hero__role">
-          <span data-i18n="hero.rolePrefix">I'm a </span><span id="typedRole" class="hero__typed"></span>
+          <span id="typedRole" class="hero__typed"></span>
         </p>
 
         <!-- Tagline -->
@@ -110,7 +110,6 @@
         <!-- CTA buttons -->
         <div class="hero__cta">
           <a href="projects.html" class="btn btn--primary" data-i18n="hero.cta.portfolio">See my work</a>
-          <a href="contact.html"  class="btn btn--ghost"   data-i18n="hero.cta.contact">Get in touch</a>
         </div>
       </div><!-- /.hero__content -->
 
@@ -169,16 +168,6 @@
           <i class="fa-solid fa-arrow-right explore-card__arrow" aria-hidden="true"></i>
         </a>
 
-        <!-- Contact -->
-        <a href="contact.html" class="explore-card">
-          <span class="explore-card__icon" aria-hidden="true">📬</span>
-          <div class="explore-card__body">
-            <h3 class="explore-card__title" data-i18n="explore.contact.title">Contact</h3>
-            <p class="explore-card__subtitle" data-i18n="explore.contact.sub">Let's talk</p>
-          </div>
-          <i class="fa-solid fa-arrow-right explore-card__arrow" aria-hidden="true"></i>
-        </a>
-
       </div><!-- /.explore-grid -->
 
     </div>
@@ -190,10 +179,17 @@
   ============================================================ -->
   <footer class="footer">
     <div class="container">
-      <p class="footer__text">
-        <span data-i18n="footer.madeBy">Made by</span>
-        <strong> Mauricio Montilla</strong> · <span id="footerYear"></span>
-      </p>
+      <div class="footer__inner">
+        <p class="footer__text">Made by <strong>Mauricio Montilla</strong> · 2026</p>
+        <div class="footer__social">
+          <a href="https://github.com/mauriciomontillagarcia" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mauricio-montilla-garc%C3%ADa-2953b1206/" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 
