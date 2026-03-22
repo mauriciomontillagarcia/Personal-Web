@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mauricio Montilla — Analytics Engineer & Data Analyst. Portfolio, projects, apps, and blog." />
+  <meta name="author" content="Mauricio Montilla" />
+  <title>Mauricio Montilla — Analytics Engineer & Data Analyst</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS — Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+
+      <!-- Logo / Name -->
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__monogram">MM</span>
+        <span class="navbar__name">Mauricio Montilla</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="navbar__links" aria-label="Main navigation">
+        <a href="projects.html" class="navbar__link" data-i18n="nav.projects">Projects</a>
+        <a href="apps.html"     class="navbar__link" data-i18n="nav.apps">Apps</a>
+        <a href="blog.html"     class="navbar__link" data-i18n="nav.blog">Blog</a>
+        <a href="contact.html"  class="navbar__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="navbar__controls">
+        <!-- Language toggle -->
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span id="langLabel">Cambiar a español</span>
+        </button>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+
+    </div><!-- /.navbar__inner -->
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="mobile-menu__links" aria-label="Mobile navigation">
+        <a href="projects.html" class="mobile-menu__link" data-i18n="nav.projects">Projects</a>
+        <a href="apps.html"     class="mobile-menu__link" data-i18n="nav.apps">Apps</a>
+        <a href="blog.html"     class="mobile-menu__link" data-i18n="nav.blog">Blog</a>
+        <a href="contact.html"  class="mobile-menu__link" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle lang-toggle--mobile" id="langToggleMobile" aria-label="Toggle language">
+          <span id="langLabelMobile">Cambiar a español</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__inner container">
+
+      <div class="hero__content hero--fade-in">
+
+        <!-- Avatar with MM initials fallback -->
+        <div class="hero__avatar-wrap">
+          <img
+            class="hero__avatar"
+            src="assets/avatar.jpg"
+            alt="Mauricio Montilla"
+            width="88"
+            height="88"
+          />
+        </div>
+
+        <!-- Name -->
+        <h1 class="hero__name">Mauricio Montilla</h1>
+
+        <!-- Animated role -->
+        <p class="hero__role">
+          <span data-i18n="hero.rolePrefix">I'm a </span><span id="typedRole" class="hero__typed"></span>
+        </p>
+
+        <!-- Tagline -->
+        <p class="hero__tagline" data-i18n="hero.tagline">
+          Turning raw data into actionable insights and building tools that matter.
+        </p>
+
+        <!-- CTA buttons -->
+        <div class="hero__cta">
+          <a href="projects.html" class="btn btn--primary" data-i18n="hero.cta.portfolio">See my work</a>
+          <a href="contact.html"  class="btn btn--ghost"   data-i18n="hero.cta.contact">Get in touch</a>
+        </div>
+      </div><!-- /.hero__content -->
+
+      <!-- Decorative scroll hint -->
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <div class="hero__scroll-dot"></div>
+      </div>
+
+    </div><!-- /.hero__inner -->
+  </section>
+
+
+  <!-- ============================================================
+       EXPLORE — Navigation cards
+  ============================================================ -->
+  <section class="section section--alt" id="explore">
+    <div class="container">
+
+      <div class="section__header" data-aos="fade-up">
+        <p class="section__label" data-i18n="explore.label">Explore</p>
+        <h2 class="section__title" data-i18n="explore.title">What I do</h2>
+        <p class="section__subtitle" data-i18n="explore.subtitle">
+          Browse my work, tools, writing, and more.
+        </p>
+      </div>
+
+      <div class="explore-grid" data-aos="fade-up" data-aos-delay="80">
+
+        <!-- Projects -->
+        <a href="projects.html" class="explore-card">
+          <span class="explore-card__icon" aria-hidden="true">📊</span>
+          <div class="explore-card__body">
+            <h3 class="explore-card__title" data-i18n="explore.projects.title">Projects</h3>
+            <p class="explore-card__subtitle" data-i18n="explore.projects.sub">Data analysis and ML models</p>
+          </div>
+          <i class="fa-solid fa-arrow-right explore-card__arrow" aria-hidden="true"></i>
+        </a>
+
+        <!-- Apps -->
+        <a href="apps.html" class="explore-card">
+          <span class="explore-card__icon" aria-hidden="true">🛠️</span>
+          <div class="explore-card__body">
+            <h3 class="explore-card__title" data-i18n="explore.apps.title">Apps</h3>
+            <p class="explore-card__subtitle" data-i18n="explore.apps.sub">Tools I've built</p>
+          </div>
+          <i class="fa-solid fa-arrow-right explore-card__arrow" aria-hidden="true"></i>
+        </a>
+
+        <!-- Blog -->
+        <a href="blog.html" class="explore-card">
+          <span class="explore-card__icon" aria-hidden="true">✍️</span>
+          <div class="explore-card__body">
+            <h3 class="explore-card__title" data-i18n="explore.blog.title">Blog</h3>
+            <p class="explore-card__subtitle" data-i18n="explore.blog.sub">Technical and personal writing</p>
+          </div>
+          <i class="fa-solid fa-arrow-right explore-card__arrow" aria-hidden="true"></i>
+        </a>
+
+        <!-- Contact -->
+        <a href="contact.html" class="explore-card">
+          <span class="explore-card__icon" aria-hidden="true">📬</span>
+          <div class="explore-card__body">
+            <h3 class="explore-card__title" data-i18n="explore.contact.title">Contact</h3>
+            <p class="explore-card__subtitle" data-i18n="explore.contact.sub">Let's talk</p>
+          </div>
+          <i class="fa-solid fa-arrow-right explore-card__arrow" aria-hidden="true"></i>
+        </a>
+
+      </div><!-- /.explore-grid -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        <span data-i18n="footer.madeBy">Made by</span>
+        <strong> Mauricio Montilla</strong> · <span id="footerYear"></span>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Site script -->
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mauricio Montilla — Apps & Tools: software built to solve real problems." />
+  <meta name="author" content="Mauricio Montilla" />
+  <title>Apps & Tools — Mauricio Montilla</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS — Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+
+      <!-- Logo / Name -->
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__monogram">MM</span>
+        <span class="navbar__name">Mauricio Montilla</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="navbar__links" aria-label="Main navigation">
+        <a href="projects.html" class="navbar__link" data-i18n="nav.projects">Projects</a>
+        <a href="apps.html"     class="navbar__link navbar__link--active" data-i18n="nav.apps">Apps</a>
+        <a href="blog.html"     class="navbar__link" data-i18n="nav.blog">Blog</a>
+        <a href="contact.html"  class="navbar__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="navbar__controls">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span id="langLabel">Cambiar a español</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+
+    </div><!-- /.navbar__inner -->
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="mobile-menu__links" aria-label="Mobile navigation">
+        <a href="projects.html" class="mobile-menu__link" data-i18n="nav.projects">Projects</a>
+        <a href="apps.html"     class="mobile-menu__link" data-i18n="nav.apps">Apps</a>
+        <a href="blog.html"     class="mobile-menu__link" data-i18n="nav.blog">Blog</a>
+        <a href="contact.html"  class="mobile-menu__link" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle lang-toggle--mobile" id="langToggleMobile" aria-label="Toggle language">
+          <span id="langLabelMobile">Cambiar a español</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       PAGE HEADER
+  ============================================================ -->
+  <div class="page-header">
+    <div class="container">
+      <p class="section__label" data-i18n="apps.label">Tools</p>
+      <h1 class="page-header__title" data-i18n="apps.title">Apps &amp; Tools</h1>
+      <p class="page-header__subtitle" data-i18n="apps.subtitle">
+        Software I've built to solve real problems.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       APPS GRID
+  ============================================================ -->
+  <main class="section" id="apps-main">
+    <div class="container">
+      <!-- Cards are rendered by JS -->
+      <div class="card-grid card-grid--2col" id="appsGrid"></div>
+    </div>
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        <span data-i18n="footer.madeBy">Made by</span>
+        <strong> Mauricio Montilla</strong> · <span id="footerYear"></span>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
