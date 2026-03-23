@@ -28,7 +28,7 @@ const TRANSLATIONS = {
     'nav.blog':     'Blog',
 
     // Hero
-    'hero.tagline':     'Turning raw data into actionable insights and building tools that matter.',
+    'hero.tagline':     'I turn data into information and ideas into tools.',
     'hero.cta.portfolio': 'See my work',
     'hero.cta.contact':   'Get in touch',
 
@@ -52,13 +52,13 @@ const TRANSLATIONS = {
 
     // Apps section
     'apps.label':    'Tools',
-    'apps.title':    'Apps & tools',
-    'apps.subtitle': "Software I've built to solve real problems.",
+    'apps.title':    'Apps',
+    'apps.subtitle': 'Apps built by me.',
 
     // Blog section
     'blog.label':    'Writing',
     'blog.title':    'Blog',
-    'blog.subtitle': 'Thoughts on data, development, and building in public.',
+    'blog.subtitle': 'Reflections on data, development, productivity, and a bit of everything.',
 
     // Contact section
     'contact.label':    'Contact',
@@ -97,7 +97,7 @@ const TRANSLATIONS = {
     'nav.blog':     'Blog',
 
     // Hero
-    'hero.tagline':     'Transformando datos en decisiones e ideas en herramientas que importan.',
+    'hero.tagline':     'Transformo datos en información e ideas en herramientas.',
     'hero.cta.portfolio': 'Ver mi trabajo',
     'hero.cta.contact':   'Contactar',
 
@@ -117,17 +117,17 @@ const TRANSLATIONS = {
     // Portfolio section
     'portfolio.label':    'Trabajo',
     'portfolio.title':    'Proyectos de datos',
-    'portfolio.subtitle': 'Una selección de proyectos de análisis e ingeniería de datos.',
+    'portfolio.subtitle': 'Una selección de proyectos de análisis, ciencia e ingeniería de datos.',
 
     // Apps section
     'apps.label':    'Herramientas',
-    'apps.title':    'Apps y herramientas',
-    'apps.subtitle': 'Software que desarrollé para resolver problemas reales.',
+    'apps.title':    'Apps',
+    'apps.subtitle': 'Apps desarrolladas por mí.',
 
     // Blog section
     'blog.label':    'Escritura',
     'blog.title':    'Blog',
-    'blog.subtitle': 'Reflexiones sobre datos, desarrollo y construir en público.',
+    'blog.subtitle': 'Reflexiones sobre datos, desarrollo, productividad, et... de todo un poco.',
 
     // Contact section
     'contact.label':    'Contacto',
@@ -229,6 +229,7 @@ const PROJECTS = [
     links: {
       demo:   null,
       github: 'https://github.com/mauriciomontillagarcia/Churn-Prediction-Telecom-Company',
+      notion: 'https://www.notion.so/Churn-prediction-in-a-telecommunications-company-6482b696bbe04a7aa73839226a32dbe6',
     },
   },
   {
@@ -263,6 +264,7 @@ const PROJECTS = [
     links: {
       demo:   null,
       github: 'https://github.com/mauriciomontillagarcia/ML-Model-Comparison-Transport-Method',
+      notion: 'https://www.notion.so/Predicting-transport-mode-choice-to-support-mobility-policy-and-planning-bdda2b67236e4586a27b143ac89e2104',
     },
   },
   {
@@ -280,6 +282,7 @@ const PROJECTS = [
     links: {
       demo:   null,
       github: 'https://github.com/mauriciomontillagarcia/Water-Pump-Functionality-Prediction',
+      notion: 'https://www.notion.so/Predicting-water-pump-functionality-to-optimize-rural-maintenance-efforts-6a13977b4653407fae8cd52b0127abca',
     },
   },
   {
@@ -309,7 +312,7 @@ function renderProjects() {
   grid.innerHTML = PROJECTS.map((project, index) => `
     <article class="card" data-aos="fade-up" data-aos-delay="${index * 80}">
       <div class="card__icon" aria-hidden="true">${project.icon}</div>
-      <h3 class="card__title">${project.links.github ? `<a href="${project.links.github}" target="_blank" rel="noopener noreferrer">${project.title[currentLang]}</a>` : project.title[currentLang]}</h3>
+      <h3 class="card__title">${(project.links.notion || project.links.github) ? `<a href="${project.links.notion || project.links.github}" target="_blank" rel="noopener noreferrer">${project.title[currentLang]}</a>` : project.title[currentLang]}</h3>
       <p class="card__description">${project.description[currentLang]}</p>
       <div class="card__tags">
         ${project.tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}
@@ -322,7 +325,12 @@ function renderProjects() {
           </a>
         ` : ''}
         ${project.links.demo && project.links.github ? `<span class="card__link-divider" aria-hidden="true">·</span>` : ''}
-        ${project.links.github ? `
+        ${project.links.notion ? `
+          <a class="card__link" href="${project.links.notion}" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            Notion
+          </a>
+        ` : project.links.github ? `
           <a class="card__link" href="${project.links.github}" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-github" aria-hidden="true"></i>
             ${t('card.github')}
