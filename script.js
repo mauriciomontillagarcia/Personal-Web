@@ -28,7 +28,7 @@ const TRANSLATIONS = {
     'nav.blog':     'Blog',
 
     // Hero
-    'hero.tagline':     'Turning raw data into actionable insights and building tools that matter.',
+    'hero.tagline':     'I turn data into information and ideas into tools.',
     'hero.cta.portfolio': 'See my work',
     'hero.cta.contact':   'Get in touch',
 
@@ -52,13 +52,13 @@ const TRANSLATIONS = {
 
     // Apps section
     'apps.label':    'Tools',
-    'apps.title':    'Apps & tools',
-    'apps.subtitle': "Software I've built to solve real problems.",
+    'apps.title':    'Apps',
+    'apps.subtitle': 'Apps built by me.',
 
     // Blog section
     'blog.label':    'Writing',
     'blog.title':    'Blog',
-    'blog.subtitle': 'Thoughts on data, development, and building in public.',
+    'blog.subtitle': 'Reflections on data, development, productivity, and a bit of everything.',
 
     // Contact section
     'contact.label':    'Contact',
@@ -97,7 +97,7 @@ const TRANSLATIONS = {
     'nav.blog':     'Blog',
 
     // Hero
-    'hero.tagline':     'Transformando datos en decisiones e ideas en herramientas que importan.',
+    'hero.tagline':     'Transformo datos en información e ideas en herramientas.',
     'hero.cta.portfolio': 'Ver mi trabajo',
     'hero.cta.contact':   'Contactar',
 
@@ -117,17 +117,17 @@ const TRANSLATIONS = {
     // Portfolio section
     'portfolio.label':    'Trabajo',
     'portfolio.title':    'Proyectos de datos',
-    'portfolio.subtitle': 'Una selección de proyectos de análisis e ingeniería de datos.',
+    'portfolio.subtitle': 'Una selección de proyectos de análisis, ciencia e ingeniería de datos.',
 
     // Apps section
     'apps.label':    'Herramientas',
-    'apps.title':    'Apps y herramientas',
-    'apps.subtitle': 'Software que desarrollé para resolver problemas reales.',
+    'apps.title':    'Apps',
+    'apps.subtitle': 'Apps desarrolladas por mí.',
 
     // Blog section
     'blog.label':    'Escritura',
     'blog.title':    'Blog',
-    'blog.subtitle': 'Reflexiones sobre datos, desarrollo y construir en público.',
+    'blog.subtitle': 'Reflexiones sobre datos, desarrollo, productividad, et... de todo un poco.',
 
     // Contact section
     'contact.label':    'Contacto',
@@ -217,86 +217,115 @@ const PROJECTS = [
   {
     id: 'churn-telecom',
     icon: '📡',
+    cover: 'assets/projects/churn-telecom.jpg',
     title: {
-      en: 'Churn prediction — Telecom',
-      es: 'Predicción de churn — Telecom',
+      en: 'Churn prediction in a telecommunications company',
+      es: 'Predicción de churn en una empresa de telecomunicaciones',
     },
     description: {
       en: 'Analytical model to predict which customers are likely to leave a telecom operator, enabling the business to act proactively with targeted retention strategies.',
       es: 'Modelo analítico para predecir qué clientes tienen mayor probabilidad de darse de baja en una operadora, permitiendo accionar estrategias de retención de forma proactiva.',
     },
-    tags: ['Python', 'scikit-learn', 'Jupyter', 'ML', 'pandas'],
+    tags: ['Python', 'scikit-learn', 'pandas'],
     links: {
       demo:   null,
       github: 'https://github.com/mauriciomontillagarcia/Churn-Prediction-Telecom-Company',
-    },
-  },
-  {
-    id: 'loan-risk',
-    icon: '🏦',
-    title: {
-      en: 'Loan repayment risk prediction',
-      es: 'Predicción de riesgo de préstamos',
-    },
-    description: {
-      en: 'Predictive model that assesses the likelihood of loan default to support credit risk decisions, built with customer-level features and machine learning classifiers.',
-      es: 'Modelo predictivo que evalúa la probabilidad de impago en préstamos para apoyar decisiones de riesgo crediticio, construido con variables de cliente y clasificadores de ML.',
-    },
-    tags: ['Python', 'scikit-learn', 'Jupyter', 'ML', 'pandas'],
-    links: {
-      demo:   null,
-      github: 'https://github.com/mauriciomontillagarcia/Loan-Repayment-Risk-Prediction',
+      notion: 'https://www.notion.so/Churn-prediction-in-a-telecommunications-company-6482b696bbe04a7aa73839226a32dbe6',
     },
   },
   {
     id: 'transport-ml',
-    icon: '🚀',
+    icon: '🚌',
+    cover: 'assets/projects/transport-ml.jpg',
     title: {
-      en: 'ML model comparison — Transport',
-      es: 'Comparación de modelos ML — Transporte',
+      en: 'Predicting transport mode choice to support mobility policy and planning',
+      es: 'Predicción del modo de transporte para apoyar políticas de movilidad',
     },
     description: {
       en: 'Comparison of multiple ML models for predicting transportation methods, with a focus on sustainability and efficiency for smarter urban mobility decisions.',
       es: 'Comparación de múltiples modelos de ML para predecir métodos de transporte, con foco en sostenibilidad y eficiencia para decisiones de movilidad urbana más inteligentes.',
     },
-    tags: ['Python', 'scikit-learn', 'Jupyter', 'ML', 'TypeScript'],
+    tags: ['Python', 'scikit-learn'],
     links: {
       demo:   null,
       github: 'https://github.com/mauriciomontillagarcia/ML-Model-Comparison-Transport-Method',
+      notion: 'https://www.notion.so/Predicting-transport-mode-choice-to-support-mobility-policy-and-planning-bdda2b67236e4586a27b143ac89e2104',
     },
   },
   {
     id: 'water-pump',
     icon: '💧',
+    cover: 'assets/projects/water-pump.jpg',
     title: {
-      en: 'Water pump functionality prediction',
-      es: 'Predicción de funcionamiento de bombas de agua',
+      en: 'Predicting water pump functionality to optimize rural maintenance efforts',
+      es: 'Predicción del funcionamiento de bombas de agua para optimizar el mantenimiento rural',
     },
     description: {
       en: 'Infrastructure ML model to accurately predict the operational status of water pumps, supporting resource optimization and proactive maintenance to reduce costs.',
       es: 'Modelo de ML para predecir con precisión el estado operativo de bombas de agua, apoyando la optimización de recursos y el mantenimiento proactivo para reducir costes.',
     },
-    tags: ['Python', 'scikit-learn', 'Jupyter', 'ML', 'pandas'],
+    tags: ['Python', 'scikit-learn', 'pandas'],
     links: {
       demo:   null,
       github: 'https://github.com/mauriciomontillagarcia/Water-Pump-Functionality-Prediction',
+      notion: 'https://www.notion.so/Predicting-water-pump-functionality-to-optimize-rural-maintenance-efforts-6a13977b4653407fae8cd52b0127abca',
     },
   },
   {
-    id: 'income-life',
-    icon: '🌍',
+    id: 'hotel-bookings',
+    icon: '🏨',
+    cover: 'assets/projects/hotel-bookings.jpg',
     title: {
-      en: 'Income vs life expectancy analysis',
-      es: 'Análisis renta vs esperanza de vida',
+      en: 'Optimizing hotel bookings through data analytics',
+      es: 'Optimización de reservas hoteleras con analítica de datos',
     },
     description: {
-      en: 'Exploratory data analysis of the relationship between per capita income and life expectancy across countries, with visualizations that reveal global inequality patterns.',
-      es: 'Análisis exploratorio de la relación entre la renta per cápita y la esperanza de vida entre países, con visualizaciones que revelan patrones de desigualdad global.',
+      en: 'Exploratory analysis and predictive modelling to optimize hotel booking rates, identifying key factors that drive cancellations and occupancy patterns.',
+      es: 'Análisis exploratorio y modelado predictivo para optimizar las reservas hoteleras, identificando los factores clave que afectan las cancelaciones y la ocupación.',
     },
-    tags: ['Python', 'pandas', 'Jupyter', 'EDA', 'Matplotlib'],
+    tags: ['Python', 'pandas', 'SQL'],
     links: {
       demo:   null,
-      github: 'https://github.com/mauriciomontillagarcia/Income-Life-Expectancy-Analysis',
+      github: null,
+      notion: 'https://www.notion.so/Optimizing-hotel-bookings-through-data-analytics-124b2334db64475899a02e3b45d80929',
+    },
+  },
+  {
+    id: 'hospital-db',
+    icon: '🏥',
+    cover: 'assets/projects/hospital-database.jpg',
+    title: {
+      en: 'Hospital resource management database design',
+      es: 'Diseño de base de datos para gestión hospitalaria',
+    },
+    description: {
+      en: 'Relational database design for managing hospital resources, covering patient records, staff scheduling, and medical equipment tracking.',
+      es: 'Diseño de base de datos relacional para la gestión de recursos hospitalarios, incluyendo pacientes, planificación de personal y equipamiento médico.',
+    },
+    tags: ['SQL'],
+    links: {
+      demo:   null,
+      github: null,
+      notion: 'https://www.notion.so/Hospital-resource-management-database-design-ef92f0ca3120451baf999657d4261370',
+    },
+  },
+  {
+    id: 'wholesale-db',
+    icon: '🏪',
+    cover: 'assets/projects/wholesale-database.jpg',
+    title: {
+      en: 'Database system for a wholesale business model',
+      es: 'Sistema de base de datos para modelo de negocio mayorista',
+    },
+    description: {
+      en: 'Design and implementation of a complete relational database for a wholesale business, covering inventory, orders, suppliers and clients.',
+      es: 'Diseño e implementación de un sistema de base de datos relacional para un negocio mayorista, cubriendo inventario, pedidos, proveedores y clientes.',
+    },
+    tags: ['SQL'],
+    links: {
+      demo:   null,
+      github: null,
+      notion: 'https://www.notion.so/Functional-database-system-for-a-wholesale-business-model-1474f66379a945b7994f4779604b0cc7',
     },
   },
 ];
@@ -308,8 +337,10 @@ function renderProjects() {
 
   grid.innerHTML = PROJECTS.map((project, index) => `
     <article class="card" data-aos="fade-up" data-aos-delay="${index * 80}">
-      <div class="card__icon" aria-hidden="true">${project.icon}</div>
-      <h3 class="card__title">${project.links.github ? `<a href="${project.links.github}" target="_blank" rel="noopener noreferrer">${project.title[currentLang]}</a>` : project.title[currentLang]}</h3>
+      <a href="${project.links.notion || project.links.github}" target="_blank" rel="noopener noreferrer" class="card__cover" aria-hidden="true">
+        <img src="${project.cover}" alt="${project.title[currentLang]}" class="card__cover-img" loading="lazy">
+      </a>
+      <h3 class="card__title">${(project.links.notion || project.links.github) ? `<a href="${project.links.notion || project.links.github}" target="_blank" rel="noopener noreferrer">${project.title[currentLang]}</a>` : project.title[currentLang]}</h3>
       <p class="card__description">${project.description[currentLang]}</p>
       <div class="card__tags">
         ${project.tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}
@@ -322,7 +353,12 @@ function renderProjects() {
           </a>
         ` : ''}
         ${project.links.demo && project.links.github ? `<span class="card__link-divider" aria-hidden="true">·</span>` : ''}
-        ${project.links.github ? `
+        ${project.links.notion ? `
+          <a class="card__link" href="${project.links.notion}" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            Notion
+          </a>
+        ` : project.links.github ? `
           <a class="card__link" href="${project.links.github}" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-github" aria-hidden="true"></i>
             ${t('card.github')}
@@ -433,6 +469,24 @@ const BLOG_POSTS = [
       es: 'Del estoicismo a la construcción de hábitos: los cinco libros que cambiaron de verdad mi forma de pensar y por qué cada uno merece tu tiempo.',
     },
     url: 'blog-5-libros.html',
+  },
+  {
+    id: 'ea-fc-manager-gpt',
+    date: '2024-06-01',
+    readTime: 3,
+    category: {
+      en: 'AI & Tools',
+      es: 'IA y herramientas',
+    },
+    title: {
+      en: 'EA FC Manager GPT: scouting with artificial intelligence',
+      es: 'EA FC Manager GPT: scouting con inteligencia artificial',
+    },
+    excerpt: {
+      en: 'I built an AI assistant that acts as a digital scout for EA FC career mode — search players by age, position, rating, potential or market value, and get a filtered table instantly.',
+      es: 'Creé un asistente de IA que funciona como un scout digital para el modo manager de EA FC — busca jugadores por edad, posición, media, potencial o valor de mercado y obtén una tabla filtrada al instante.',
+    },
+    url: 'blog-ea-fc-gpt.html',
   },
 ];
 

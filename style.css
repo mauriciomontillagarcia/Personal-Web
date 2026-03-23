@@ -632,6 +632,30 @@ input, textarea, select {
   box-shadow: var(--card-shadow-hover);
 }
 
+/* Card cover header */
+.card__cover {
+  display: block;
+  width: calc(100% + var(--space-xl) * 2);
+  margin: calc(var(--space-xl) * -1) calc(var(--space-xl) * -1) var(--space-md);
+  height: 160px;
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
+  text-decoration: none;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card__cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card__cover:hover .card__cover-img {
+  transform: scale(1.04);
+}
+
 /* Card icon */
 .card__icon {
   width: 44px;
