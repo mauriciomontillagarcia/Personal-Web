@@ -41,7 +41,7 @@ const TRANSLATIONS = {
     'explore.apps.title':     'Apps',
     'explore.apps.sub':       "Tools I've built",
     'explore.blog.title':     'Blog',
-    'explore.blog.sub':       'Technical and personal writing',
+    'explore.blog.sub':       'Reflections on data, development, productivity and more.',
     'explore.contact.title':  'Contact',
     'explore.contact.sub':    "Let's talk",
 
@@ -110,7 +110,7 @@ const TRANSLATIONS = {
     'explore.apps.title':     'Apps',
     'explore.apps.sub':       'Herramientas que desarrollé',
     'explore.blog.title':     'Blog',
-    'explore.blog.sub':       'Escritura técnica y personal',
+    'explore.blog.sub':       'Reflexiones sobre datos, desarrollo, productividad y de todo un poco.',
     'explore.contact.title':  'Contacto',
     'explore.contact.sub':    'Hablemos',
 
