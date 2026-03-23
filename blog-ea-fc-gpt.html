@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EA FC Manager GPT: scouting con inteligencia artificial — Mauricio Montilla" />
+  <meta name="author" content="Mauricio Montilla" />
+  <title>EA FC Manager GPT — Mauricio Montilla</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+
+      <!-- Logo / Name -->
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__monogram">MM</span>
+        <span class="navbar__name">Mauricio Montilla</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="navbar__links" aria-label="Main navigation">
+        <a href="index.html"    class="navbar__link" data-i18n="nav.about">Sobre mí</a>
+        <a href="projects.html" class="navbar__link" data-i18n="nav.projects">Data Projects</a>
+        <a href="apps.html"     class="navbar__link" data-i18n="nav.apps">Apps</a>
+        <a href="blog.html"     class="navbar__link navbar__link--active" data-i18n="nav.blog">Blog</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="navbar__controls">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span id="langLabel">Cambiar a español</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+
+    </div><!-- /.navbar__inner -->
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="mobile-menu__links" aria-label="Mobile navigation">
+        <a href="index.html"    class="mobile-menu__link" data-i18n="nav.about">Sobre mí</a>
+        <a href="projects.html" class="mobile-menu__link" data-i18n="nav.projects">Data Projects</a>
+        <a href="apps.html"     class="mobile-menu__link" data-i18n="nav.apps">Apps</a>
+        <a href="blog.html"     class="mobile-menu__link" data-i18n="nav.blog">Blog</a>
+        <button class="lang-toggle lang-toggle--mobile" id="langToggleMobile" aria-label="Toggle language">
+          <span id="langLabelMobile">Cambiar a español</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       BLOG POST CONTENT
+  ============================================================ -->
+  <main>
+    <article class="blog-post">
+
+      <!-- Back link -->
+      <a href="blog.html" class="blog-post__back">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        Volver al blog
+      </a>
+
+      <!-- Meta -->
+      <div class="blog-post__meta">
+        <span class="blog-post__category">IA y herramientas</span>
+        <span>1 de junio de 2024</span>
+        <span>3 min de lectura</span>
+      </div>
+
+      <!-- Title -->
+      <h1 class="blog-post__title">EA FC Manager GPT: scouting con inteligencia artificial</h1>
+
+      <!-- Body -->
+      <div class="blog-post__body">
+
+        <p>Como economista y analista de datos, siempre he sido de jugar al modo manager en el FIFA o ahora conocido como EA SPORTS FC. ¿El motivo? Me encanta buscar talento oculto, analizar datos de jugadores y confeccionar equipos desde cero para llevarlos a la élite.</p>
+
+        <p>Por eso he creado <strong>EA FC Manager GPT</strong>, un asistente de IA que funciona como un auténtico scout digital para este modo de juego.</p>
+
+        <hr class="blog-post__divider" />
+
+        <h2>¿Cómo funciona?</h2>
+
+        <p>Le preguntas por edad, posición, media, potencial, valor de mercado… incluso que te indique jugadores parecidos a Cristiano en 2016. Con esto te devuelve directamente una tabla con los perfiles que encajan dentro de lo que le pidas.</p>
+
+        <h2>La parte técnica</h2>
+
+        <p>La base de datos está extraída mediante <strong>scraping con Python</strong>, y el GPT interpreta el lenguaje natural del usuario para devolver justo lo que necesita. Una forma de aplicar mis conocimientos en datos a uno de mis hobbies.</p>
+
+        <hr class="blog-post__divider" />
+
+        <p>Puedes probarlo aquí:</p>
+        <p><a href="https://lnkd.in/dM6wEixd" target="_blank" rel="noopener noreferrer">EA FC Manager GPT →</a></p>
+
+      </div><!-- /.blog-post__body -->
+
+    </article>
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__text">Made by <strong>Mauricio Montilla</strong> · 2026</p>
+        <div class="footer__social">
+          <a href="https://github.com/mauriciomontillagarcia" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mauricio-montilla-garc%C3%ADa-2953b1206/" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script src="script.js"></script>
+
+</body>
+</html>

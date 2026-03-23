@@ -219,8 +219,8 @@ const PROJECTS = [
     icon: '📡',
     cover: 'assets/projects/churn-telecom.jpg',
     title: {
-      en: 'Churn prediction — Telecom',
-      es: 'Predicción de churn — Telecom',
+      en: 'Churn prediction in a telecommunications company',
+      es: 'Predicción de churn en una empresa de telecomunicaciones',
     },
     description: {
       en: 'Analytical model to predict which customers are likely to leave a telecom operator, enabling the business to act proactively with targeted retention strategies.',
@@ -238,8 +238,8 @@ const PROJECTS = [
     icon: '🚌',
     cover: 'assets/projects/transport-ml.jpg',
     title: {
-      en: 'ML model comparison — Transport',
-      es: 'Comparación de modelos ML — Transporte',
+      en: 'Predicting transport mode choice to support mobility policy and planning',
+      es: 'Predicción del modo de transporte para apoyar políticas de movilidad',
     },
     description: {
       en: 'Comparison of multiple ML models for predicting transportation methods, with a focus on sustainability and efficiency for smarter urban mobility decisions.',
@@ -257,8 +257,8 @@ const PROJECTS = [
     icon: '💧',
     cover: 'assets/projects/water-pump.jpg',
     title: {
-      en: 'Water pump functionality prediction',
-      es: 'Predicción de funcionamiento de bombas de agua',
+      en: 'Predicting water pump functionality to optimize rural maintenance efforts',
+      es: 'Predicción del funcionamiento de bombas de agua para optimizar el mantenimiento rural',
     },
     description: {
       en: 'Infrastructure ML model to accurately predict the operational status of water pumps, supporting resource optimization and proactive maintenance to reduce costs.',
@@ -269,6 +269,63 @@ const PROJECTS = [
       demo:   null,
       github: 'https://github.com/mauriciomontillagarcia/Water-Pump-Functionality-Prediction',
       notion: 'https://www.notion.so/Predicting-water-pump-functionality-to-optimize-rural-maintenance-efforts-6a13977b4653407fae8cd52b0127abca',
+    },
+  },
+  {
+    id: 'hotel-bookings',
+    icon: '🏨',
+    cover: 'assets/projects/hotel-bookings.jpg',
+    title: {
+      en: 'Optimizing hotel bookings through data analytics',
+      es: 'Optimización de reservas hoteleras con analítica de datos',
+    },
+    description: {
+      en: 'Exploratory analysis and predictive modelling to optimize hotel booking rates, identifying key factors that drive cancellations and occupancy patterns.',
+      es: 'Análisis exploratorio y modelado predictivo para optimizar las reservas hoteleras, identificando los factores clave que afectan las cancelaciones y la ocupación.',
+    },
+    tags: ['Python', 'pandas', 'Jupyter', 'EDA', 'SQL'],
+    links: {
+      demo:   null,
+      github: null,
+      notion: 'https://www.notion.so/Optimizing-hotel-bookings-through-data-analytics-124b2334db64475899a02e3b45d80929',
+    },
+  },
+  {
+    id: 'hospital-db',
+    icon: '🏥',
+    cover: 'assets/projects/hospital-database.jpg',
+    title: {
+      en: 'Hospital resource management database design',
+      es: 'Diseño de base de datos para gestión hospitalaria',
+    },
+    description: {
+      en: 'Relational database design for managing hospital resources, covering patient records, staff scheduling, and medical equipment tracking.',
+      es: 'Diseño de base de datos relacional para la gestión de recursos hospitalarios, incluyendo pacientes, planificación de personal y equipamiento médico.',
+    },
+    tags: ['SQL', 'PostgreSQL', 'Database design', 'ERD'],
+    links: {
+      demo:   null,
+      github: null,
+      notion: 'https://www.notion.so/Hospital-resource-management-database-design-ef92f0ca3120451baf999657d4261370',
+    },
+  },
+  {
+    id: 'wholesale-db',
+    icon: '🏪',
+    cover: 'assets/projects/wholesale-database.jpg',
+    title: {
+      en: 'Database system for a wholesale business model',
+      es: 'Sistema de base de datos para modelo de negocio mayorista',
+    },
+    description: {
+      en: 'Design and implementation of a complete relational database for a wholesale business, covering inventory, orders, suppliers and clients.',
+      es: 'Diseño e implementación de un sistema de base de datos relacional para un negocio mayorista, cubriendo inventario, pedidos, proveedores y clientes.',
+    },
+    tags: ['SQL', 'PostgreSQL', 'Database design', 'ERD'],
+    links: {
+      demo:   null,
+      github: null,
+      notion: 'https://www.notion.so/Functional-database-system-for-a-wholesale-business-model-1474f66379a945b7994f4779604b0cc7',
     },
   },
 ];
@@ -412,6 +469,24 @@ const BLOG_POSTS = [
       es: 'Del estoicismo a la construcción de hábitos: los cinco libros que cambiaron de verdad mi forma de pensar y por qué cada uno merece tu tiempo.',
     },
     url: 'blog-5-libros.html',
+  },
+  {
+    id: 'ea-fc-manager-gpt',
+    date: '2024-06-01',
+    readTime: 3,
+    category: {
+      en: 'AI & Tools',
+      es: 'IA y herramientas',
+    },
+    title: {
+      en: 'EA FC Manager GPT: scouting with artificial intelligence',
+      es: 'EA FC Manager GPT: scouting con inteligencia artificial',
+    },
+    excerpt: {
+      en: 'I built an AI assistant that acts as a digital scout for EA FC career mode — search players by age, position, rating, potential or market value, and get a filtered table instantly.',
+      es: 'Creé un asistente de IA que funciona como un scout digital para el modo manager de EA FC — busca jugadores por edad, posición, media, potencial o valor de mercado y obtén una tabla filtrada al instante.',
+    },
+    url: 'blog-ea-fc-gpt.html',
   },
 ];
 
