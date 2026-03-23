@@ -217,6 +217,7 @@ const PROJECTS = [
   {
     id: 'churn-telecom',
     icon: '📡',
+    cover: 'assets/projects/churn-telecom.jpg',
     title: {
       en: 'Churn prediction — Telecom',
       es: 'Predicción de churn — Telecom',
@@ -233,25 +234,9 @@ const PROJECTS = [
     },
   },
   {
-    id: 'loan-risk',
-    icon: '🏦',
-    title: {
-      en: 'Loan repayment risk prediction',
-      es: 'Predicción de riesgo de préstamos',
-    },
-    description: {
-      en: 'Predictive model that assesses the likelihood of loan default to support credit risk decisions, built with customer-level features and machine learning classifiers.',
-      es: 'Modelo predictivo que evalúa la probabilidad de impago en préstamos para apoyar decisiones de riesgo crediticio, construido con variables de cliente y clasificadores de ML.',
-    },
-    tags: ['Python', 'scikit-learn', 'Jupyter', 'ML', 'pandas'],
-    links: {
-      demo:   null,
-      github: 'https://github.com/mauriciomontillagarcia/Loan-Repayment-Risk-Prediction',
-    },
-  },
-  {
     id: 'transport-ml',
-    icon: '🚀',
+    icon: '🚌',
+    cover: 'assets/projects/transport-ml.jpg',
     title: {
       en: 'ML model comparison — Transport',
       es: 'Comparación de modelos ML — Transporte',
@@ -270,6 +255,7 @@ const PROJECTS = [
   {
     id: 'water-pump',
     icon: '💧',
+    cover: 'assets/projects/water-pump.jpg',
     title: {
       en: 'Water pump functionality prediction',
       es: 'Predicción de funcionamiento de bombas de agua',
@@ -285,23 +271,6 @@ const PROJECTS = [
       notion: 'https://www.notion.so/Predicting-water-pump-functionality-to-optimize-rural-maintenance-efforts-6a13977b4653407fae8cd52b0127abca',
     },
   },
-  {
-    id: 'income-life',
-    icon: '🌍',
-    title: {
-      en: 'Income vs life expectancy analysis',
-      es: 'Análisis renta vs esperanza de vida',
-    },
-    description: {
-      en: 'Exploratory data analysis of the relationship between per capita income and life expectancy across countries, with visualizations that reveal global inequality patterns.',
-      es: 'Análisis exploratorio de la relación entre la renta per cápita y la esperanza de vida entre países, con visualizaciones que revelan patrones de desigualdad global.',
-    },
-    tags: ['Python', 'pandas', 'Jupyter', 'EDA', 'Matplotlib'],
-    links: {
-      demo:   null,
-      github: 'https://github.com/mauriciomontillagarcia/Income-Life-Expectancy-Analysis',
-    },
-  },
 ];
 
 /** Render project cards into #projectsGrid */
@@ -311,7 +280,9 @@ function renderProjects() {
 
   grid.innerHTML = PROJECTS.map((project, index) => `
     <article class="card" data-aos="fade-up" data-aos-delay="${index * 80}">
-      <div class="card__icon" aria-hidden="true">${project.icon}</div>
+      <a href="${project.links.notion || project.links.github}" target="_blank" rel="noopener noreferrer" class="card__cover" aria-hidden="true">
+        <img src="${project.cover}" alt="${project.title[currentLang]}" class="card__cover-img" loading="lazy">
+      </a>
       <h3 class="card__title">${(project.links.notion || project.links.github) ? `<a href="${project.links.notion || project.links.github}" target="_blank" rel="noopener noreferrer">${project.title[currentLang]}</a>` : project.title[currentLang]}</h3>
       <p class="card__description">${project.description[currentLang]}</p>
       <div class="card__tags">
