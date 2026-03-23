@@ -226,7 +226,7 @@ const PROJECTS = [
       en: 'Analytical model to predict which customers are likely to leave a telecom operator, enabling the business to act proactively with targeted retention strategies.',
       es: 'Modelo analítico para predecir qué clientes tienen mayor probabilidad de darse de baja en una operadora, permitiendo accionar estrategias de retención de forma proactiva.',
     },
-    tags: ['Python', 'scikit-learn', 'Jupyter', 'ML', 'pandas'],
+    tags: ['Python', 'scikit-learn', 'pandas'],
     links: {
       demo:   null,
       github: 'https://github.com/mauriciomontillagarcia/Churn-Prediction-Telecom-Company',
@@ -245,7 +245,7 @@ const PROJECTS = [
       en: 'Comparison of multiple ML models for predicting transportation methods, with a focus on sustainability and efficiency for smarter urban mobility decisions.',
       es: 'Comparación de múltiples modelos de ML para predecir métodos de transporte, con foco en sostenibilidad y eficiencia para decisiones de movilidad urbana más inteligentes.',
     },
-    tags: ['Python', 'scikit-learn', 'Jupyter', 'ML', 'TypeScript'],
+    tags: ['Python', 'scikit-learn'],
     links: {
       demo:   null,
       github: 'https://github.com/mauriciomontillagarcia/ML-Model-Comparison-Transport-Method',
@@ -264,7 +264,7 @@ const PROJECTS = [
       en: 'Infrastructure ML model to accurately predict the operational status of water pumps, supporting resource optimization and proactive maintenance to reduce costs.',
       es: 'Modelo de ML para predecir con precisión el estado operativo de bombas de agua, apoyando la optimización de recursos y el mantenimiento proactivo para reducir costes.',
     },
-    tags: ['Python', 'scikit-learn', 'Jupyter', 'ML', 'pandas'],
+    tags: ['Python', 'scikit-learn', 'pandas'],
     links: {
       demo:   null,
       github: 'https://github.com/mauriciomontillagarcia/Water-Pump-Functionality-Prediction',
@@ -283,7 +283,7 @@ const PROJECTS = [
       en: 'Exploratory analysis and predictive modelling to optimize hotel booking rates, identifying key factors that drive cancellations and occupancy patterns.',
       es: 'Análisis exploratorio y modelado predictivo para optimizar las reservas hoteleras, identificando los factores clave que afectan las cancelaciones y la ocupación.',
     },
-    tags: ['Python', 'pandas', 'Jupyter', 'EDA', 'SQL'],
+    tags: ['Python', 'pandas', 'SQL'],
     links: {
       demo:   null,
       github: null,
@@ -302,7 +302,7 @@ const PROJECTS = [
       en: 'Relational database design for managing hospital resources, covering patient records, staff scheduling, and medical equipment tracking.',
       es: 'Diseño de base de datos relacional para la gestión de recursos hospitalarios, incluyendo pacientes, planificación de personal y equipamiento médico.',
     },
-    tags: ['SQL', 'PostgreSQL', 'Database design', 'ERD'],
+    tags: ['SQL'],
     links: {
       demo:   null,
       github: null,
@@ -321,7 +321,7 @@ const PROJECTS = [
       en: 'Design and implementation of a complete relational database for a wholesale business, covering inventory, orders, suppliers and clients.',
       es: 'Diseño e implementación de un sistema de base de datos relacional para un negocio mayorista, cubriendo inventario, pedidos, proveedores y clientes.',
     },
-    tags: ['SQL', 'PostgreSQL', 'Database design', 'ERD'],
+    tags: ['SQL'],
     links: {
       demo:   null,
       github: null,
