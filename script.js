@@ -382,7 +382,7 @@ const APPS = [
     icon: '🗺️',
     title: {
       en: 'City Size Comparison',
-      es: 'Comparador de Tamaño de Ciudades',
+      es: 'City Size Comparison',
     },
     description: {
       en: 'Interactive map tool to overlay and compare the geographical size of different cities side by side. Built with React and Leaflet for smooth, intuitive exploration.',
