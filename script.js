@@ -108,7 +108,7 @@ const TRANSLATIONS = {
     'explore.projects.title': 'Proyectos',
     'explore.projects.sub':   'Análisis de datos y modelos de ML',
     'explore.apps.title':     'Apps',
-    'explore.apps.sub':       'Herramientas que desarrollé',
+    'explore.apps.sub':       'Herramientas desarrolladas',
     'explore.blog.title':     'Blog',
     'explore.blog.sub':       'Reflexiones sobre datos, desarrollo, productividad y de todo un poco.',
     'explore.contact.title':  'Contacto',
@@ -122,12 +122,12 @@ const TRANSLATIONS = {
     // Apps section
     'apps.label':    'Herramientas',
     'apps.title':    'Apps',
-    'apps.subtitle': 'Apps desarrolladas por mí.',
+    'apps.subtitle': 'Herramientas desarrolladas.',
 
     // Blog section
     'blog.label':    'Escritura',
     'blog.title':    'Blog',
-    'blog.subtitle': 'Reflexiones sobre datos, desarrollo, productividad, et... de todo un poco.',
+    'blog.subtitle': 'Reflexiones sobre datos, desarrollo, productividad, etc. de todo un poco.',
 
     // Contact section
     'contact.label':    'Contacto',
@@ -486,7 +486,7 @@ const BLOG_POSTS = [
       en: 'I built an AI assistant that acts as a digital scout for EA FC career mode — search players by age, position, rating, potential or market value, and get a filtered table instantly.',
       es: 'Creé un asistente de IA que funciona como un scout digital para el modo manager de EA FC — busca jugadores por edad, posición, media, potencial o valor de mercado y obtén una tabla filtrada al instante.',
     },
-    url: 'blog-ea-fc-gpt.html',
+    url: 'https://chatgpt.com/g/g-684dafe3e04881919e2135c9782d2d38-ea-fc-modo-manager-gpt',
   },
 ];
 
