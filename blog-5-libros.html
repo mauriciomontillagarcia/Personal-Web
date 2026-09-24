@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Site styles -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=gpt-cover-1" />
+  <link rel="icon" type="image/png" href="personalweblogo.png?v=1" />
 </head>
 <body>
 
@@ -28,16 +29,16 @@
 
       <!-- Logo / Name -->
       <a href="index.html" class="navbar__logo">
-        <span class="navbar__monogram">MM</span>
+        <img class="navbar__brand-image" src="personalweblogo.png" alt="Mauricio Montilla" width="72" height="34" />
         <span class="navbar__name">Mauricio Montilla</span>
       </a>
 
       <!-- Desktop nav links -->
-      <nav class="navbar__links" aria-label="Main navigation">
+      <nav class="navbar__links" aria-label="Main navigation" data-i18n-aria="nav.main">
         <a href="index.html"    class="navbar__link" data-i18n="nav.about">Sobre mí</a>
         <a href="projects.html" class="navbar__link" data-i18n="nav.projects">Data Projects</a>
         <a href="apps.html"     class="navbar__link" data-i18n="nav.apps">Apps</a>
-        <a href="blog.html"     class="navbar__link navbar__link--active" data-i18n="nav.blog">Blog</a>
+        <a href="blog.html"     class="navbar__link navbar__link--active" data-i18n="nav.blog">Recursos</a>
       </nav>
 
       <!-- Right controls -->
@@ -45,7 +46,7 @@
         <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
           <span id="langLabel">Cambiar a español</span>
         </button>
-        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <button class="hamburger" id="hamburger" aria-label="Open menu" data-i18n-aria="nav.menu" aria-expanded="false">
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
@@ -56,11 +57,11 @@
 
     <!-- Mobile menu overlay -->
     <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-      <nav class="mobile-menu__links" aria-label="Mobile navigation">
+      <nav class="mobile-menu__links" aria-label="Mobile navigation" data-i18n-aria="nav.mobile">
         <a href="index.html"    class="mobile-menu__link" data-i18n="nav.about">Sobre mí</a>
         <a href="projects.html" class="mobile-menu__link" data-i18n="nav.projects">Data Projects</a>
         <a href="apps.html"     class="mobile-menu__link" data-i18n="nav.apps">Apps</a>
-        <a href="blog.html"     class="mobile-menu__link" data-i18n="nav.blog">Blog</a>
+        <a href="blog.html"     class="mobile-menu__link" data-i18n="nav.blog">Recursos</a>
         <button class="lang-toggle lang-toggle--mobile" id="langToggleMobile" aria-label="Toggle language">
           <span id="langLabelMobile">Cambiar a español</span>
         </button>
@@ -73,12 +74,12 @@
        BLOG POST CONTENT
   ============================================================ -->
   <main>
-    <article class="blog-post">
+    <article class="blog-post" data-language="es" lang="es">
 
       <!-- Back link -->
       <a href="blog.html" class="blog-post__back">
         <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-        Volver al blog
+        Volver a recursos
       </a>
 
       <!-- Meta -->
@@ -120,6 +121,53 @@
       </div><!-- /.blog-post__body -->
 
     </article>
+<article class="blog-post" data-language="en" lang="en" hidden>
+
+      <!-- Back link -->
+      <a href="blog.html" class="blog-post__back">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        Back to resources
+      </a>
+
+      <!-- Meta -->
+      <div class="blog-post__meta">
+        <span class="blog-post__category">Books</span>
+        <span>15 January 2023</span>
+        <span>4 min read</span>
+      </div>
+
+      <!-- Title -->
+      <h1 class="blog-post__title">My 5 favourite books on personal development</h1>
+
+      <!-- Body -->
+      <div class="blog-post__body">
+
+        <h2>1. "The Subtle Art of Not Giving a F*ck" — Mark Manson</h2>
+        <p>Unlike the relentlessly positive outlook of many personal development books, this one makes you rethink what really matters in your life and question your sense of entitlement when something affects you.</p>
+
+        <hr class="blog-post__divider" />
+
+        <h2>2. "Invicto" — Marcos Vázquez</h2>
+        <p>The best book for getting started with Stoicism and understanding it properly. An essential overview of this philosophy and of Stoic practices that can help us in everyday life.</p>
+
+        <hr class="blog-post__divider" />
+
+        <h2>3. "The 7 Habits of Highly Effective People" — Stephen R. Covey</h2>
+        <p>For me, an essential guide to habits that can significantly improve your life. It changed my perspective on many things and sparked my interest in this kind of book.</p>
+
+        <hr class="blog-post__divider" />
+
+        <h2>4. "The 12 Levers of Success" — Stephen R. Covey</h2>
+        <p>A companion to the previous book, this one focuses more on small actions that can improve your quality of life from day one, without relying so much on internalising habits.</p>
+
+        <hr class="blog-post__divider" />
+
+        <h2>5. "12 Rules for Life" — Jordan B. Peterson</h2>
+        <p>A reality check that shakes you from the opening chapters. Perhaps a little denser than the others, but it helps explain why we behave in certain ways.</p>
+
+      </div><!-- /.blog-post__body -->
+
+    </article>
   </main>
 
 
@@ -129,7 +177,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <p class="footer__text">Made by <strong>Mauricio Montilla</strong> · 2026</p>
+        <p class="footer__text"><span data-i18n="footer.madeBy">Made by</span> <strong>Mauricio Montilla</strong> · 2026</p>
         <div class="footer__social">
           <a href="https://github.com/mauriciomontillagarcia" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i class="fa-brands fa-github" aria-hidden="true"></i>
@@ -147,7 +195,7 @@
        SCRIPTS
   ============================================================ -->
   <!-- AOS not needed on this page — no scroll animations -->
-  <script src="script.js"></script>
+  <script src="script.js?v=gpt-cover-1"></script>
 
 </body>
 </html>

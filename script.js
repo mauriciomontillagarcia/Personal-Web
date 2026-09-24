@@ -21,12 +21,23 @@
 
 const TRANSLATIONS = {
   en: {
+    'resources.templates': 'Notion templates',
+    'resources.tools': 'Tools',
+    'resources.marketplace': 'My Notion marketplace',
+    'resources.template': 'View template',
+    'resources.open': 'Open GPT',
+    'resources.free': 'Free',
+    'resources.paid': 'Paid',
     // Navbar
-    'nav.about':    'Sobre mí',
+    'nav.about':    'About me',
     'nav.projects': 'Data Projects',
     'nav.apps':     'Apps',
-    'nav.blog':     'Blog',
+    'nav.blog':     'Resources',
 
+    'app.open': 'Open app',
+    'nav.main': 'Main navigation',
+    'nav.mobile': 'Mobile navigation',
+    'nav.menu': 'Open menu',
     // Hero
     'hero.tagline':     'I turn data into information and ideas into tools.',
     'hero.cta.portfolio': 'See my work',
@@ -40,8 +51,8 @@ const TRANSLATIONS = {
     'explore.projects.sub':   'Data analysis and ML models',
     'explore.apps.title':     'Apps',
     'explore.apps.sub':       "Tools I've built",
-    'explore.blog.title':     'Blog',
-    'explore.blog.sub':       'Reflections on data, development, productivity and more.',
+    'explore.blog.title':     'Resources',
+    'explore.blog.sub':       'Notion templates and practical tools created by me.',
     'explore.contact.title':  'Contact',
     'explore.contact.sub':    "Let's talk",
 
@@ -57,8 +68,8 @@ const TRANSLATIONS = {
 
     // Blog section
     'blog.label':    'Writing',
-    'blog.title':    'Blog',
-    'blog.subtitle': 'Reflections on data, development, productivity, and a bit of everything.',
+    'blog.title':    'Resources',
+    'blog.subtitle': 'Notion templates and practical tools created by me.',
 
     // Contact section
     'contact.label':    'Contact',
@@ -71,7 +82,9 @@ const TRANSLATIONS = {
     'contact.form.emailPlaceholder': 'your@email.com',
     'contact.form.message':          'Message',
     'contact.form.messagePlaceholder': 'Tell me about your project...',
-    'contact.form.submit':           'Send message',
+    'contact.form.submit':           'Open email app',
+    'contact.form.hint': 'This form opens your email app. Send the message there to complete delivery.',
+    'contact.mailto': 'Continue in your email app to send the message. If it did not open, use the email address shown on this page.',
     'contact.success':               "Message sent! I'll get back to you soon.",
     'contact.error':                 'Something went wrong. Please try email directly.',
 
@@ -90,12 +103,23 @@ const TRANSLATIONS = {
   },
 
   es: {
+    'resources.templates': 'Plantillas de Notion',
+    'resources.tools': 'Herramientas',
+    'resources.marketplace': 'Mi marketplace de Notion',
+    'resources.template': 'Ver plantilla',
+    'resources.open': 'Abrir GPT',
+    'resources.free': 'Gratis',
+    'resources.paid': 'De pago',
     // Navbar
     'nav.about':    'Sobre mí',
-    'nav.projects': 'Data Projects',
+    'nav.projects': 'Proyectos de datos',
     'nav.apps':     'Apps',
-    'nav.blog':     'Blog',
+    'nav.blog':     'Recursos',
 
+    'app.open': 'Abrir aplicación',
+    'nav.main': 'Navegación principal',
+    'nav.mobile': 'Navegación móvil',
+    'nav.menu': 'Abrir menú',
     // Hero
     'hero.tagline':     'Transformo datos en información e ideas en herramientas.',
     'hero.cta.portfolio': 'Ver mi trabajo',
@@ -104,13 +128,13 @@ const TRANSLATIONS = {
     // Explore section (home page)
     'explore.label':          'Explorar',
     'explore.title':          'Lo que hago',
-    'explore.subtitle':       'Explorá mi trabajo, herramientas, escritura y más.',
+    'explore.subtitle':       'Explora mi trabajo, herramientas, escritura y más.',
     'explore.projects.title': 'Proyectos',
     'explore.projects.sub':   'Análisis de datos y modelos de ML',
     'explore.apps.title':     'Apps',
     'explore.apps.sub':       'Herramientas desarrolladas',
-    'explore.blog.title':     'Blog',
-    'explore.blog.sub':       'Reflexiones sobre datos, desarrollo, productividad y de todo un poco.',
+    'explore.blog.title':     'Recursos',
+    'explore.blog.sub':       'Plantillas de Notion y herramientas prácticas creadas por mí.',
     'explore.contact.title':  'Contacto',
     'explore.contact.sub':    'Hablemos',
 
@@ -126,23 +150,25 @@ const TRANSLATIONS = {
 
     // Blog section
     'blog.label':    'Escritura',
-    'blog.title':    'Blog',
-    'blog.subtitle': 'Reflexiones sobre datos, desarrollo, productividad, etc. de todo un poco.',
+    'blog.title':    'Recursos',
+    'blog.subtitle': 'Plantillas de Notion y herramientas prácticas creadas por mí.',
 
     // Contact section
     'contact.label':    'Contacto',
     'contact.title':    'Hablemos',
-    'contact.subtitle': '¿Tenés un proyecto en mente o simplemente querés saludar?',
-    'contact.info.text': 'También podés contactarme directamente por email o encontrarme en redes sociales.',
+    'contact.subtitle': '¿Tienes un proyecto en mente o simplemente quieres saludar?',
+    'contact.info.text': 'También puedes contactarme directamente por email o encontrarme en redes sociales.',
     'contact.form.name':             'Nombre',
     'contact.form.namePlaceholder':  'Tu nombre',
     'contact.form.email':            'Email',
     'contact.form.emailPlaceholder': 'tu@email.com',
     'contact.form.message':          'Mensaje',
-    'contact.form.messagePlaceholder': 'Contame sobre tu proyecto...',
-    'contact.form.submit':           'Enviar mensaje',
-    'contact.success':               '¡Mensaje enviado! Te responderé a la brevedad.',
-    'contact.error':                 'Algo salió mal. Por favor escribime directamente por email.',
+    'contact.form.messagePlaceholder': 'Cuéntame sobre tu proyecto...',
+    'contact.form.submit':           'Abrir aplicación de correo',
+    'contact.form.hint': 'Este formulario abre tu aplicación de correo. Envía el mensaje desde allí para completar el envío.',
+    'contact.mailto': 'Continúa en tu aplicación de correo para enviar el mensaje. Si no se ha abierto, utiliza la dirección de correo que aparece en esta página.',
+    'contact.success':               '¡Mensaje enviado! Te responderé lo antes posible.',
+    'contact.error':                 'Algo salió mal. Por favor escríbeme directamente por email.',
 
     // Card links
     'card.demo':   'Demo en vivo',
@@ -161,6 +187,10 @@ const TRANSLATIONS = {
 
 /** Detect initial language from browser preference, default to English */
 function detectLanguage() {
+  try {
+    const saved = localStorage.getItem('portfolio-language');
+    if (saved === 'es' || saved === 'en') return saved;
+  } catch { /* Browser storage may be unavailable. */ }
   const browserLang = (navigator.language || navigator.userLanguage || 'en').slice(0, 2).toLowerCase();
   return browserLang === 'es' ? 'es' : 'en';
 }
@@ -191,18 +221,22 @@ function applyTranslations() {
   });
 
   document.documentElement.lang = currentLang;
+  document.querySelectorAll('[data-language]').forEach(el => { el.hidden = el.dataset.language !== currentLang; });
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => el.setAttribute('aria-label', t(el.dataset.i18nAria)));
 
   // Lang toggle button label
   const labels = document.querySelectorAll('#langLabel, #langLabelMobile');
   const toggleText = currentLang === 'en' ? 'Cambiar a español' : 'Change to English';
   labels.forEach((label) => {
     label.textContent = toggleText;
+    label.parentElement.setAttribute('aria-label', toggleText);
   });
 }
 
 /** Toggle between EN and ES, then re-render dynamic content for current page */
 function toggleLanguage() {
   currentLang = currentLang === 'en' ? 'es' : 'en';
+  try { localStorage.setItem('portfolio-language', currentLang); } catch { /* Keep the toggle usable. */ }
   applyTranslations();
   renderPageContent();
   restartTyped();
@@ -415,8 +449,8 @@ function renderApps() {
           aria-hidden="true"
           title="${app.title[currentLang]} preview"
         ></iframe>
-        <a class="card__preview-overlay" href="${app.iframeUrl}" target="_blank" rel="noopener noreferrer" aria-label="Open ${app.title[currentLang]}">
-          <span class="card__preview-label"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open app</span>
+        <a class="card__preview-overlay" href="${app.iframeUrl}" target="_blank" rel="noopener noreferrer" aria-label="${t('app.open')}: ${app.title[currentLang]}">
+          <span class="card__preview-label"><i class="fa-solid fa-arrow-up-right-from-square"></i> ${t('app.open')}</span>
         </a>
       </div>
       ` : `<div class="card__icon" aria-hidden="true">${app.icon}</div>`}
@@ -451,81 +485,74 @@ function renderApps() {
    SECTION 4 — Blog Posts
    ============================================================ */
 
-const BLOG_POSTS = [
+const NOTION_TEMPLATES = [
   {
-    id: '5-libros-desarrollo-personal',
-    date: '2023-01-15',
-    readTime: 4,
-    category: {
-      en: 'Books',
-      es: 'Libros',
-    },
-    title: {
-      en: 'My 5 Favourite Personal Development Books',
-      es: 'Mis 5 libros favoritos sobre desarrollo personal',
-    },
-    excerpt: {
-      en: 'From Stoicism to habit-building: the five books that genuinely changed the way I think — and why each one is worth your time.',
-      es: 'Del estoicismo a la construcción de hábitos: los cinco libros que cambiaron de verdad mi forma de pensar y por qué cada uno merece tu tiempo.',
-    },
-    url: 'blog-5-libros.html',
+    "name": "MyBudget",
+    "slug": "mybudget",
+    "image": "5483d20e-3c8f-4686-8548-9fd464b679d3/1771832376681",
+    "paid": false,
+    "description": {
+      "es": "Organiza tus ingresos y gastos, define tu objetivo de ahorro y consulta tu presupuesto de un vistazo.",
+      "en": "Organise your income and expenses, set a savings goal and check your budget at a glance."
+    }
   },
   {
-    id: 'ea-fc-manager-gpt',
-    date: '2024-06-01',
-    readTime: 3,
-    category: {
-      en: 'AI & Tools',
-      es: 'IA y herramientas',
-    },
-    title: {
-      en: 'EA FC Manager GPT: scouting with artificial intelligence',
-      es: 'EA FC Manager GPT: scouting con inteligencia artificial',
-    },
-    excerpt: {
-      en: 'I built an AI assistant that acts as a digital scout for EA FC career mode — search players by age, position, rating, potential or market value, and get a filtered table instantly.',
-      es: 'Creé un asistente de IA que funciona como un scout digital para el modo manager de EA FC — busca jugadores por edad, posición, media, potencial o valor de mercado y obtén una tabla filtrada al instante.',
-    },
-    url: 'https://chatgpt.com/g/g-684dafe3e04881919e2135c9782d2d38-ea-fc-modo-manager-gpt',
+    "name": "MyContent",
+    "slug": "mycontent",
+    "image": "4d133e4b-7862-4e6d-a5d2-323769451dba/1773130457104",
+    "paid": false,
+    "description": {
+      "es": "Reúne ideas, guiones, tareas y calendario de publicaciones en un único espacio de trabajo.",
+      "en": "Bring ideas, scripts, tasks and your publishing calendar together in one workspace."
+    }
   },
+  {
+    "name": "MyTrain",
+    "slug": "mytrain",
+    "image": "c0cc6cc4-a8e6-4bd8-a59c-1a4613a0b00c/1773067190139",
+    "paid": true,
+    "description": {
+      "es": "Planifica tus entrenamientos semanales y registra la evolución de las cargas con una estructura sencilla.",
+      "en": "Plan your weekly workouts and track your lifting progress with a simple structure."
+    }
+  }
 ];
 
-/** Format ISO date string to locale-friendly display */
-function formatDate(isoString, lang) {
-  const date = new Date(isoString + 'T00:00:00');
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  const locale = lang === 'es' ? 'es-AR' : 'en-US';
-  return date.toLocaleDateString(locale, options);
-}
-
-/** Render blog posts into #blogList */
+/** Render Notion templates and tools into the resources page. */
 function renderBlog() {
   const list = document.getElementById('blogList');
   if (!list) return;
-
-  list.innerHTML = BLOG_POSTS.map((post, index) => `
-    <a class="blog-item" href="${post.url}" data-aos="fade-up" data-aos-delay="${index * 60}">
-      <div class="blog-item__left">
-        <div class="blog-item__meta">
-          <span class="blog-item__category">${post.category[currentLang]}</span>
-          <span class="blog-item__date">${formatDate(post.date, currentLang)}</span>
-        </div>
-        <h3 class="blog-item__title">${post.title[currentLang]}</h3>
-        <p class="blog-item__excerpt">${post.excerpt[currentLang]}</p>
+  list.innerHTML = `
+    <section aria-labelledby="templates-title">
+      <div class="resources__header">
+        <h2 class="section__title" id="templates-title">${t('resources.templates')}</h2>
+        <a class="card__link" href="https://www.notion.com/@mauriciomontilla" target="_blank" rel="noopener noreferrer">${t('resources.marketplace')} ↗</a>
       </div>
-      <div class="blog-item__right">
-        <span class="blog-item__read-time">
-          <i class="fa-regular fa-clock" aria-hidden="true"></i>
-          ${post.readTime} ${t('blog.readTime')}
-        </span>
-        <div class="blog-item__arrow" aria-hidden="true">
-          <i class="fa-solid fa-arrow-right"></i>
-        </div>
+      <div class="card-grid">
+        ${NOTION_TEMPLATES.map(item => `
+          <article class="card resource-card">
+            <a class="card__cover" href="https://www.notion.com/templates/${item.slug}" target="_blank" rel="noopener noreferrer" aria-label="${t('resources.template')}: ${item.name}">
+              <img class="card__cover-img" src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/template/${item.image}/desktop.jpg" alt="${item.name}" loading="lazy" width="640" height="360">
+            </a>
+            <h3 class="card__title">${item.name}</h3>
+            <p class="card__description">${item.description[currentLang]}</p>
+            <a class="card__link" href="https://www.notion.com/templates/${item.slug}" target="_blank" rel="noopener noreferrer">${t('resources.template')} ↗</a>
+          </article>`).join('')}
       </div>
-    </a>
-  `).join('');
-
-  if (window.AOS) AOS.refresh();
+    </section>
+    <section class="resources__tools" aria-labelledby="tools-title">
+      <h2 class="section__title" id="tools-title">${t('resources.tools')}</h2>
+      <div class="card-grid">
+      <article class="card resource-card resource-tool">
+        <a class="card__cover" href="https://chatgpt.com/g/g-684dafe3e04881919e2135c9782d2d38-ea-fc-modo-manager-gpt" target="_blank" rel="noopener noreferrer" aria-label="${t('resources.open')}: EA FC Manager GPT">
+          <img class="card__cover-img" src="assets/ea-fc-manager.svg" alt="EA FC Manager GPT" loading="lazy" width="640" height="360">
+        </a>
+        <h3 class="card__title">EA FC Manager GPT</h3>
+        <p class="card__description">${currentLang === 'es' ? 'Un asistente de scouting para el modo carrera de EA FC. Busca jugadores por edad, posición, media, potencial o valor de mercado.' : 'A scouting assistant for EA FC career mode. Find players by age, position, rating, potential or market value.'}</p>
+        <a class="card__link" href="https://chatgpt.com/g/g-684dafe3e04881919e2135c9782d2d38-ea-fc-modo-manager-gpt" target="_blank" rel="noopener noreferrer">${t('resources.open')} ↗</a>
+      </article>
+      </div>
+    </section>`;
 }
 
 
@@ -580,69 +607,6 @@ function renderSocial() {
 /* ============================================================
    SECTION 6 — Contact Form
    ============================================================ */
-
-/**
- * Set to a Formspree / Netlify Forms URL to use real form submission.
- * Set to null to fall back to mailto: only.
- * Example: 'https://formspree.io/f/YOUR_FORM_ID'
- */
-const FORM_ENDPOINT = null;
-
-/** The email address that mailto: will send to */
-const CONTACT_EMAIL = 'mauri@example.com';
-
-function initContactForm() {
-  const form = document.getElementById('contactForm');
-  const feedback = document.getElementById('formFeedback');
-  if (!form || !feedback) return;
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const name    = form.name.value.trim();
-    const email   = form.email.value.trim();
-    const message = form.message.value.trim();
-
-    if (!name || !email || !message) return;
-
-    if (FORM_ENDPOINT) {
-      try {
-        const response = await fetch(FORM_ENDPOINT, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify({ name, email, message }),
-        });
-
-        if (response.ok) {
-          feedback.textContent = t('contact.success');
-          feedback.className = 'form__feedback form__feedback--success';
-          form.reset();
-        } else {
-          throw new Error('Server error');
-        }
-      } catch {
-        feedback.textContent = t('contact.error');
-        feedback.className = 'form__feedback form__feedback--error';
-      }
-    } else {
-      // mailto: fallback
-      const subject  = encodeURIComponent(`Contact from ${name} via portfolio`);
-      const body     = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-      const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-      window.location.href = mailtoUrl;
-
-      feedback.textContent = t('contact.success');
-      feedback.className = 'form__feedback form__feedback--success';
-      form.reset();
-    }
-
-    setTimeout(() => {
-      feedback.textContent = '';
-      feedback.className = 'form__feedback';
-    }, 5000);
-  });
-}
-
 
 /* ============================================================
    SECTION 7 — Navbar
@@ -799,11 +763,6 @@ function init() {
 
   // Render dynamic content for current page only
   renderPageContent();
-
-  // Init contact form if on contact page
-  if (detectPage() === 'contact') {
-    initContactForm();
-  }
 
   // Shared interactive features (present on every page)
   initNavbar();

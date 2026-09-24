@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
   <!-- Site styles -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=gpt-cover-1" />
+  <link rel="icon" type="image/png" href="personalweblogo.png?v=1" />
 </head>
 <body>
 
@@ -31,16 +32,16 @@
 
       <!-- Logo / Name -->
       <a href="index.html" class="navbar__logo">
-        <span class="navbar__monogram">MM</span>
+        <img class="navbar__brand-image" src="personalweblogo.png" alt="Mauricio Montilla" width="72" height="34" />
         <span class="navbar__name">Mauricio Montilla</span>
       </a>
 
       <!-- Desktop nav links -->
-      <nav class="navbar__links" aria-label="Main navigation">
+      <nav class="navbar__links" aria-label="Main navigation" data-i18n-aria="nav.main">
         <a href="index.html"    class="navbar__link" data-i18n="nav.about">Sobre mí</a>
         <a href="projects.html" class="navbar__link navbar__link--active" data-i18n="nav.projects">Data Projects</a>
         <a href="apps.html"     class="navbar__link" data-i18n="nav.apps">Apps</a>
-        <a href="blog.html"     class="navbar__link" data-i18n="nav.blog">Blog</a>
+        <a href="blog.html"     class="navbar__link" data-i18n="nav.blog">Recursos</a>
       </nav>
 
       <!-- Right controls -->
@@ -48,7 +49,7 @@
         <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
           <span id="langLabel">Cambiar a español</span>
         </button>
-        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <button class="hamburger" id="hamburger" aria-label="Open menu" data-i18n-aria="nav.menu" aria-expanded="false">
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
@@ -59,11 +60,11 @@
 
     <!-- Mobile menu overlay -->
     <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-      <nav class="mobile-menu__links" aria-label="Mobile navigation">
+      <nav class="mobile-menu__links" aria-label="Mobile navigation" data-i18n-aria="nav.mobile">
         <a href="index.html"    class="mobile-menu__link" data-i18n="nav.about">Sobre mí</a>
         <a href="projects.html" class="mobile-menu__link" data-i18n="nav.projects">Data Projects</a>
         <a href="apps.html"     class="mobile-menu__link" data-i18n="nav.apps">Apps</a>
-        <a href="blog.html"     class="mobile-menu__link" data-i18n="nav.blog">Blog</a>
+        <a href="blog.html"     class="mobile-menu__link" data-i18n="nav.blog">Recursos</a>
         <button class="lang-toggle lang-toggle--mobile" id="langToggleMobile" aria-label="Toggle language">
           <span id="langLabelMobile">Cambiar a español</span>
         </button>
@@ -102,7 +103,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <p class="footer__text">Made by <strong>Mauricio Montilla</strong> · 2026</p>
+        <p class="footer__text"><span data-i18n="footer.madeBy">Made by</span> <strong>Mauricio Montilla</strong> · 2026</p>
         <div class="footer__social">
           <a href="https://github.com/mauriciomontillagarcia" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i class="fa-brands fa-github" aria-hidden="true"></i>
@@ -120,7 +121,7 @@
        SCRIPTS
   ============================================================ -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js?v=gpt-cover-1"></script>
 
 </body>
 </html>

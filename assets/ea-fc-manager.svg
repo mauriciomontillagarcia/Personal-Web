@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+<rect width="640" height="360" fill="#f7f8f8"/>
+<rect x="36" y="30" width="568" height="300" rx="16" fill="white" stroke="#e5e7e7"/>
+<text x="62" y="80" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#17232b">EA FC Manager GPT</text>
+<text x="62" y="106" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#66716e">SCOUTING · AI</text>
+<rect x="62" y="131" width="270" height="173" rx="9" fill="#edf3ef"/>
+<g fill="none" stroke="#afc5b7" stroke-width="2"><rect x="78" y="145" width="238" height="145" rx="2"/><path d="M197 145v145M78 180h37v75H78m238-75h-37v75h37"/><circle cx="197" cy="217.5" r="28"/></g>
+<g fill="#344b3d" stroke="white" stroke-width="3"><circle cx="104" cy="217" r="8"/><circle cx="148" cy="176" r="8"/><circle cx="148" cy="258" r="8"/><circle cx="203" cy="198" r="8"/><circle cx="249" cy="231" r="8"/><circle cx="282" cy="181" r="8"/></g>
+<g fill="#f5f6f6" stroke="#e7eaea"><rect x="350" y="131" width="228" height="49" rx="7"/><rect x="350" y="193" width="228" height="49" rx="7"/><rect x="350" y="255" width="228" height="49" rx="7"/></g>
+<g fill="#b2bcb6"><circle cx="374" cy="155" r="10"/><circle cx="374" cy="217" r="10"/><circle cx="374" cy="279" r="10"/></g>
+<g fill="#bdc5c1"><rect x="397" y="145" width="83" height="6" rx="3"/><rect x="397" y="207" width="65" height="6" rx="3"/><rect x="397" y="269" width="75" height="6" rx="3"/></g>
+<g fill="#dbe0dd"><rect x="397" y="159" width="58" height="5" rx="2"/><rect x="397" y="221" width="48" height="5" rx="2"/><rect x="397" y="283" width="60" height="5" rx="2"/></g>
+<g fill="#526a5a"><rect x="514" y="151" width="44" height="7" rx="3"/><rect x="514" y="213" width="34" height="7" rx="3"/><rect x="514" y="275" width="39" height="7" rx="3"/></g>
+</svg>
