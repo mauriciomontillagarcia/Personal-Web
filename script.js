@@ -441,7 +441,7 @@ const APPS = [
       es: 'Calculadora hipotecaria que te ayuda a entender cuánto necesitas para comprar una vivienda, cómo sería tu hipoteca y hasta dónde puedes llegar con tus ahorros. Sin registro, sin letra pequeña.',
     },
     tags: ['Next.js', 'TypeScript', 'CSS'],
-    iframeUrl: 'https://hipoteclara-hcy5marq7-mauricios-projects-7e297b69.vercel.app/',
+    previewImg: 'assets/apps/hipoteclara-preview.jpg',
     links: {
       demo:   'https://hipoteclara-hcy5marq7-mauricios-projects-7e297b69.vercel.app/',
       github: null,
@@ -455,7 +455,7 @@ function renderApps() {
   if (!grid) return;
 
   grid.innerHTML = APPS.map((app, index) => `
-    <article class="card${app.iframeUrl ? ' card--has-preview' : ''}" data-aos="fade-up" data-aos-delay="${index * 80}">
+    <article class="card${(app.iframeUrl || app.previewImg) ? ' card--has-preview' : ''}" data-aos="fade-up" data-aos-delay="${index * 80}">
       ${app.iframeUrl ? `
       <div class="card__preview">
         <iframe
@@ -467,16 +467,20 @@ function renderApps() {
           aria-hidden="true"
           title="${app.title[currentLang]} preview"
         ></iframe>
-        <a class="card__preview-overlay" href="${app.iframeUrl}" target="_blank" rel="noopener noreferrer" aria-label="${t('app.open')}: ${app.title[currentLang]}">
+        <a class="card__preview-overlay" href="${app.links.demo}" target="_blank" rel="noopener noreferrer" aria-label="${t('app.open')}: ${app.title[currentLang]}">
+          <span class="card__preview-label"><i class="fa-solid fa-arrow-up-right-from-square"></i> ${t('app.open')}</span>
+        </a>
+      </div>
+      ` : app.previewImg ? `
+      <div class="card__preview">
+        <img src="${app.previewImg}" alt="${app.title[currentLang]} preview" class="card__preview-img" loading="lazy" />
+        <a class="card__preview-overlay" href="${app.links.demo}" target="_blank" rel="noopener noreferrer" aria-label="${t('app.open')}: ${app.title[currentLang]}">
           <span class="card__preview-label"><i class="fa-solid fa-arrow-up-right-from-square"></i> ${t('app.open')}</span>
         </a>
       </div>
       ` : `<div class="card__icon" aria-hidden="true">${app.icon}</div>`}
       <h3 class="card__title">${app.title[currentLang]}</h3>
       <p class="card__description">${app.description[currentLang]}</p>
-      <div class="card__tags">
-        ${app.tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}
-      </div>
       <div class="card__links">
         ${app.links.demo ? `
           <a class="card__link" href="${app.links.demo}" target="_blank" rel="noopener noreferrer">
