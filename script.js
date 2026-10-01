@@ -429,6 +429,24 @@ const APPS = [
       github: null,
     },
   },
+  {
+    id: 'hipoteclara',
+    icon: '🏠',
+    title: {
+      en: 'Hipoteclara',
+      es: 'Hipoteclara',
+    },
+    description: {
+      en: 'Mortgage calculator that helps you understand how much you need to buy a home, what your mortgage would look like, and how far your savings can take you. No registration, no fine print.',
+      es: 'Calculadora hipotecaria que te ayuda a entender cuánto necesitas para comprar una vivienda, cómo sería tu hipoteca y hasta dónde puedes llegar con tus ahorros. Sin registro, sin letra pequeña.',
+    },
+    tags: ['Next.js', 'TypeScript', 'CSS'],
+    iframeUrl: 'https://hipoteclara-hcy5marq7-mauricios-projects-7e297b69.vercel.app/',
+    links: {
+      demo:   'https://hipoteclara-hcy5marq7-mauricios-projects-7e297b69.vercel.app/',
+      github: null,
+    },
+  },
 ];
 
 /** Render app cards into #appsGrid */
