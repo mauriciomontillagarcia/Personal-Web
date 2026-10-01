@@ -376,9 +376,6 @@ function renderProjects() {
       </a>
       <h3 class="card__title">${(project.links.notion || project.links.github) ? `<a href="${project.links.notion || project.links.github}" target="_blank" rel="noopener noreferrer">${project.title[currentLang]}</a>` : project.title[currentLang]}</h3>
       <p class="card__description">${project.description[currentLang]}</p>
-      <div class="card__tags">
-        ${project.tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}
-      </div>
       <div class="card__links">
         ${project.links.demo ? `
           <a class="card__link" href="${project.links.demo}" target="_blank" rel="noopener noreferrer">
@@ -443,7 +440,7 @@ const APPS = [
     tags: ['Next.js', 'TypeScript', 'CSS'],
     previewImg: 'assets/apps/hipoteclara-preview.png',
     links: {
-      demo:   'https://hipoteclara-hcy5marq7-mauricios-projects-7e297b69.vercel.app/',
+      demo:   'https://hipoteclara.vercel.app/',
       github: null,
     },
   },
@@ -482,13 +479,6 @@ function renderApps() {
       <h3 class="card__title">${app.title[currentLang]}</h3>
       <p class="card__description">${app.description[currentLang]}</p>
       <div class="card__links">
-        ${app.links.demo ? `
-          <a class="card__link" href="${app.links.demo}" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-            ${t('card.demo')}
-          </a>
-        ` : ''}
-        ${app.links.demo && app.links.github ? `<span class="card__link-divider" aria-hidden="true">·</span>` : ''}
         ${app.links.github ? `
           <a class="card__link" href="${app.links.github}" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-github" aria-hidden="true"></i>
