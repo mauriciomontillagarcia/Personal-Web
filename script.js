@@ -441,7 +441,7 @@ const APPS = [
       es: 'Calculadora hipotecaria que te ayuda a entender cuánto necesitas para comprar una vivienda, cómo sería tu hipoteca y hasta dónde puedes llegar con tus ahorros. Sin registro, sin letra pequeña.',
     },
     tags: ['Next.js', 'TypeScript', 'CSS'],
-    previewImg: 'assets/apps/hipoteclara-preview.jpg',
+    previewImg: 'assets/apps/hipoteclara-preview.png',
     links: {
       demo:   'https://hipoteclara-hcy5marq7-mauricios-projects-7e297b69.vercel.app/',
       github: null,
