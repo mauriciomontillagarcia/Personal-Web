@@ -338,8 +338,12 @@ input, textarea, select {
    ------------------------------------------------------------ */
 .mobile-menu {
   position: fixed;
-  inset: 0;
   top: var(--navbar-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(100vh - var(--navbar-height));
+  height: calc(100svh - var(--navbar-height));
   background-color: var(--color-bg);
   z-index: 99;
   display: flex;
@@ -348,6 +352,7 @@ input, textarea, select {
   transform: translateX(100%);
   transition: transform var(--transition-slow) cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobile-menu.is-open {

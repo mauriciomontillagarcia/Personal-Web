@@ -40,6 +40,8 @@ const TRANSLATIONS = {
     'nav.menu': 'Open menu',
     // Hero
     'hero.tagline':     'I turn data into information and ideas into tools.',
+    'hero.cta.projects': 'See my projects',
+    'hero.cta.apps':     'See my apps',
     'hero.cta.portfolio': 'See my work',
     'hero.cta.contact':   'Get in touch',
 
@@ -122,6 +124,8 @@ const TRANSLATIONS = {
     'nav.menu': 'Abrir menú',
     // Hero
     'hero.tagline':     'Transformo datos en información e ideas en herramientas.',
+    'hero.cta.projects': 'Ver mis proyectos',
+    'hero.cta.apps':     'Ver mis apps',
     'hero.cta.portfolio': 'Ver mi trabajo',
     'hero.cta.contact':   'Contactar',
 
