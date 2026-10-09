@@ -413,20 +413,20 @@ function renderProjects() {
 
 const APPS = [
   {
-    id: 'city-size-comparison',
+    id: 'city-match',
     icon: '🗺️',
     title: {
-      en: 'City Size Comparison',
-      es: 'City Size Comparison',
+      en: 'City Match',
+      es: 'City Match',
     },
     description: {
       en: 'Interactive map tool to overlay and compare the geographical size of different cities side by side. Built with React and Leaflet for smooth, intuitive exploration.',
       es: 'Herramienta de mapas interactiva para superponer y comparar el tamaño geográfico de diferentes ciudades. Desarrollada con React y Leaflet para una exploración fluida e intuitiva.',
     },
     tags: ['React', 'Leaflet', 'JavaScript', 'CSS'],
-    iframeUrl: 'https://mauriciomontillagarcia.github.io/City-Size-Comparsion/',
+    previewImg: 'assets/apps/citymatch-preview.png',
     links: {
-      demo:   'https://mauriciomontillagarcia.github.io/City-Size-Comparsion/',
+      demo:   'https://city-match-six.vercel.app/',
       github: null,
     },
   },
