@@ -431,20 +431,20 @@ const APPS = [
     },
   },
   {
-    id: 'hipoteclara',
+    id: 'hipotecamente',
     icon: '🏠',
     title: {
-      en: 'Hipoteclara',
-      es: 'Hipoteclara',
+      en: 'Hipotecamente',
+      es: 'Hipotecamente',
     },
     description: {
       en: 'Mortgage calculator that helps you understand how much you need to buy a home, what your mortgage would look like, and how far your savings can take you. No registration, no fine print.',
       es: 'Calculadora hipotecaria que te ayuda a entender cuánto necesitas para comprar una vivienda, cómo sería tu hipoteca y hasta dónde puedes llegar con tus ahorros. Sin registro, sin letra pequeña.',
     },
     tags: ['Next.js', 'TypeScript', 'CSS'],
-    previewImg: 'assets/apps/hipoteclara-preview.png',
+    previewImg: 'assets/apps/hipotecamente-preview.png',
     links: {
-      demo:   'https://hipoteclara.vercel.app/',
+      demo:   'https://hipotecamente.vercel.app/',
       github: null,
     },
   },
