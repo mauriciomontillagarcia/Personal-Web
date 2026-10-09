@@ -628,12 +628,12 @@ input, textarea, select {
    ------------------------------------------------------------ */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(310px, 100%), 1fr));
   gap: var(--space-lg);
 }
 
 .card-grid--2col {
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr));
 }
 
 
@@ -1176,9 +1176,9 @@ input, textarea, select {
 
 
 /* ------------------------------------------------------------
-   16. RESPONSIVE — Mobile (≤ 680px)
+   16. RESPONSIVE — Mobile (≤ 768px)
    ------------------------------------------------------------ */
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   :root {
     --space-section: 4.5rem;
   }
